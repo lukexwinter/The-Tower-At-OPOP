@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+
+Options -Indexes
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+#------------------
+# DOMAIN 301 REDIRECTS
+#------------------
+
+# AMALFI
+#------------------
+#RewriteCond %{HTTP_HOST} ^amalfileasing.localhost.com [NC]
+#RewriteRule ^(.*)$ amalfileasing.localhost.com/texas/frisco/amalfi$1 [L,R=301]
+
+# THE TOWER AT OPOP
+#------------------
+RewriteRule ^the-tower-at-opop/$													/missouri/st-louis/the-tower-at-opop [L,R=301]
+RewriteRule ^missouri/st-louis/the-tower-at-opop$									/the-tower-at-opop/live-site/index.php [L]
+
+RewriteRule ^missouri/st-louis/the-tower-at-opop(/(.*))?$ 							/the-tower-at-opop/$1 [QSA,L]
+
+
+</IfModule>
