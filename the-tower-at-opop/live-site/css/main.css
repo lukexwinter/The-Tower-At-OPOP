@@ -95,6 +95,8 @@ textarea {
          url('gotham-medium.svg#GothamMedium') format('svg');
 }
 
+.content { width: 1122px; margin: 0 auto; }
+
 /************/
 /*Home Page*/
 /**********/
@@ -106,7 +108,14 @@ header {
 	-moz-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
 }
+header nav { max-width: 1144px; margin: 0 auto; }
+header nav #tower-opop-logo { width: 200px; height: 47px; margin: 15px 0 0 0; }
 header nav ul { margin: 42px 0 0 0; padding: 0; position: relative; }
+header nav ul li.menu-button { 
+	position: absolute; right: 10px; top: -15px; width: 23px; height: 23px; border: 0; margin: 0; padding: 10px; border: 0px solid #26799d; display: none; 
+}
+header nav ul li.menu-button a { border: 0; padding: 0; margin: 0; width: 100%; height: 100%; display: block; }
+header nav ul li.menu-button span { display: block; height: 1px; background: #26799d; margin: 0 0 6px 0; }
 header nav ul li.tower-logo { position: absolute; left: -163px; }
 header nav ul li { display: inline; font-family: 'gotham-medium'; text-transform: uppercase; font-size: 12px; }
 header nav ul li a { 
@@ -127,7 +136,7 @@ header.collapsed {
 }
 header.collapsed #tower-opop-logo { display: none; }
 header.collapsed nav ul { margin: 0 0 0 0; }
-header.collapsed nav ul li.tower-logo { left: 0; }
+header.collapsed nav ul li.tower-logo { left: 0; top: -8px; }
 header.collapsed nav ul li.tower-logo a:hover { border: none; }
 
 
@@ -180,10 +189,10 @@ body {
 }
 
 .scrollsections article p {
-	font-size: 22px;
+	font-size: 18px;
 	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 	font-style: italic;
-	margin: 15px 0 0 0;
+	margin: 20px 0 0 0;
 	letter-spacing: .5px;
 }
 
@@ -198,7 +207,7 @@ body {
 	font-size: 12px;
 	display: inline-block;
 	letter-spacing: 2px;
-	margin: 30px 0 0 0;
+	margin: 40px 0 0 0;
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
 	transition: all .2s ease-out;
@@ -216,7 +225,7 @@ body {
   z-index: 100;
   background: transparent;
   overflow: hidden;
-  margin-top: -103px;
+  margin-top: -84px;
 }
 .scrollsections-menuitem {
   position: relative;
@@ -240,9 +249,10 @@ body {
   width: 12px;
 }
 
+#scrollsections-menuitem-5 { opacity: 0; }
+
 section#home { background-image: url('../img/bg-tower-blue.jpg'); }
 section#home h2 { font-size: 48px; }
-section#home article { padding-top: 105px; }
 section#home #scroll-indicator { 
 	position: absolute; bottom: 25px; left: 50%; margin-left: -21.5px; opacity: 1;
 	-webkit-transition: all .3s ease-out;
@@ -265,7 +275,26 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 
 /*End Scroll Sections*/
 
-
+/*Footer*/
+footer { font-size: 10px; color: #666; background: #e0e1d4; font-family: 'gotham-medium'; }
+footer.scrollsections { max-height: 328px; }
+footer .top { text-transform: uppercase; padding: 50px 0; }
+footer .top h6 { margin: 1px 0 18px 0; font-size: 14px; font-family: 'gotham-medium'; font-weight: normal; }
+footer .top ul { margin: 0 20px 0 0; padding: 0; float: left; }
+footer .top ul li { margin: 0 0 4px 0; padding: 0; list-style-type: none; }
+footer .top a { color: #235a71; text-decoration: none; }
+footer .top a:hover { text-decoration: underline; }
+footer .col5, footer .col3, footer .col2 { float: left; margin: 0 20px 0 0; }
+footer .col5 { width: 455px; line-height: 1.6; }
+footer .col5 img { display: block; }
+footer .col3 { width: 265px; }
+footer .col2 { width: 170px; }
+footer .col2.last { margin-right: 0; }
+footer .bottom { background: #235a71; color: #e1e2d4; text-align: center; padding: 25px 0; }
+footer .bottom a { color: #e1e2d4; text-decoration: none; }
+footer .bottom p { margin: 0; font-family: 'gotham-light'; }
+footer .bottom p#breadcrumbs { font-size: 11px; text-transform: uppercase; margin: 0 0 5px 0; }
+footer .bottom p#terms { font-size: 9px; }
 
 
 
@@ -281,8 +310,16 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (max-width: 980px) {
+	header.collapsed { height: 20px; width: 100%; padding: 23px 0; overflow: hidden; }
+	header nav ul { padding-top: 75px; }
+	header nav ul li { display: block; text-align: center; padding: 15px 0; border-bottom: 1px solid #e5e5dc; letter-spacing: 2px; width: 320px; margin: 0 auto;}
+	header nav ul li:last-child { border: 0; padding-bottom: 0; }
+	header nav ul li a { margin: 0; padding: 0; }
+	header nav ul li a:hover { border: 0; color: #cbccc4; }
+	header nav ul li.menu-button { display: block; }
+	header.collapsed nav ul li.tower-logo { display: block; left: 50%; margin: 0 0 0 -163px; padding: 0; border: 0; border-bottom: 0; }
+	header.collapsed nav ul li.tower-logo a { margin: 0; }
 }
 
 @media print,
