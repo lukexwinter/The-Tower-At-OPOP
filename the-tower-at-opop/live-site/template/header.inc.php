@@ -20,6 +20,15 @@
 
 		<script src="<?php echo MAINURL."js/plugins.js"; ?>"></script>
 		<script src="<?php echo MAINURL."js/main.js"; ?>"></script>
+		<script>
+			$(document).ready(function() {
+				//mobile menu button toggle
+				$('.menu-button').click(function(e) {
+					e.preventDefault();
+				  $('header').toggleClass('open');
+				});
+			});
+		</script>
     </head>
     <body>
         <!--[if lt IE 7]>

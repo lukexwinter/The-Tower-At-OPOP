@@ -47,13 +47,6 @@
 		
 		<script>
 		$(document).ready(function() {
-			
-			//mobile menu button toggle
-			$('.menu-button').click(function(e) {
-				e.preventDefault();
-			  $('header').toggleClass('open');
-			});
-			
 			//initiate scroll indication animation
 			setInterval(function(){
 				indicateScroll();

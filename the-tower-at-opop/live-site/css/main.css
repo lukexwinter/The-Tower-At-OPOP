@@ -294,6 +294,75 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 
 /*End Scroll Sections*/
 
+
+/*Apartments*/
+.fp-nav { width: 100%; top: 73px; margin: 0 auto; background: #f8f8f8; position: fixed; }
+.fp-nav a { 
+	display: inline-block; width: 16.666667%; /*190/1140*/ text-align: center; position: relative; text-decoration: none; padding: 15px 0; float: left;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+.fp-nav a:hover { background: #fff; }
+.fp-nav a.active { background: #fff; }
+.fp-nav a .sep-right {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;
+	background: #f8f8f8; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VjZWNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOGY4ZjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f8f8f8 0%, #ececec 50%, #f8f8f8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(50%,#ececec), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f8f8 0%,#ececec 50%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f8f8 0%,#ececec 50%,#f8f8f8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f8f8 0%,#ececec 50%,#f8f8f8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f8f8 0%,#ececec 50%,#f8f8f8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-8 */
+}
+.fp-nav a .sep-left {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	background: #f8f8f8; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOGY4ZjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f8f8f8 0%, #ffffff 50%, #f8f8f8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(50%,#ffffff), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f8f8 0%,#ffffff 50%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f8f8 0%,#ffffff 50%,#f8f8f8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f8f8 0%,#ffffff 50%,#f8f8f8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f8f8 0%,#ffffff 50%,#f8f8f8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-8 */
+	
+}
+.fp-nav a img { width: 47px; height: 114px; margin: 0 0 10px 0; }
+.fp-nav a span { position: absolute; right: 20px; top: 8px; color: #26799d; font-size: 24px; font-family: 'gotham-light'; }
+.fp-nav a p { margin: 0; font-size: 10px; text-decoration: none; color: #666666; font-family: 'gotham-book'; line-height: 1.2; }
+.fp-nav a p.type { text-transform: uppercase; }
+
+.fp-nav .toggle-nav { background: #f2f2f2; text-align: center; }
+.fp-nav .toggle-nav div { max-width: 1140px; margin: 0 auto; }
+.fp-nav .toggle-nav a { float: none; padding: 11px 0; text-transform: uppercase; font-family:'gotham-book'; font-size: 11px; letter-spacing: 1px; color: #666666; border-top: 1px solid #eaeaea; }
+.fp-nav .toggle-nav a.active { color: #26799d; background: #fff !important; }
+
+.fp-content { margin: 289px 0 0 0; background: url('../img/bg-06-blue.jpg') no-repeat top center; background-size: cover; padding: 100px 0; }
+.fp-item { max-width: 1140px; margin: 0 auto; }
+.fp-item .fp-image { width: 48.245614%; /*550/1140*/ text-align: center; margin-right: 10.263158%; /*1170/1140*/ float: left; }
+.fp-item .fp-info { width: 40.087719%; /*457/1140*/ float: left; color: #fff; }
+.fp-item .fp-info h1 { font-size: 80px; font-family: 'gotham-light'; margin: 0; font-weight: normal;}
+.fp-item .fp-info p { margin: 0; font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-style: italic; font-size: 18px; letter-spacing: 1px; }	
+.fp-item .fp-info ul { margin: 0; padding: 0 0 0 15px ; }
+
+/*End Apartments*/
+
+
 /*Footer*/
 footer { font-size: 10px; color: #666; background: #e0e1d4; font-family: 'gotham-medium'; }
 footer.scrollsections { height: auto !important; }
