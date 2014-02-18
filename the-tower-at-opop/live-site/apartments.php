@@ -1,49 +1,54 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/the-tower-at-opop/live-site/template/header.inc.php"); ?>
+<link rel="stylesheet" href="<?php echo MAINURL."css/rwd-table.css"; ?>" />
+<script src="<?php echo MAINURL."js/vendor/respond.js"; ?>"></script>
+<script src="<?php echo MAINURL."js/vendor/jquery-ui.widget.min.js"; ?>"></script>
+<script src="<?php echo MAINURL."js/rwd-table.js"; ?>"></script>
+
 		<section class="units">
 			<nav class="fp-nav">
 				<div class="content clearfix">
 					<a id="fp-01" href="#01">
-						<span>01</span>
-						<img src="<?php echo MAINURL."img/01-indicator.png"; ?>" alt="01" />
+						<span class="unit">01</span>
+						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,295</p>
 						<span class="sep-right"></span>
 					</a>
-					<a href="#02">
-						<span>02</span>
-						<img src="<?php echo MAINURL."img/02-indicator.png"; ?>" alt="02" />
+					<a id="fp-02" href="#02">
+						<span class="unit">02</span>
+						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,295</p>
 						<span class="sep-left"></span>
 						<span class="sep-right"></span>
 					</a>
-					<a href="#03">
-						<span>03</span>
-						<img src="<?php echo MAINURL."img/03-indicator.png"; ?>" alt="03" />
+					<a id="fp-03" href="#03">
+						<span class="unit">03</span>
+						<span class="indicator"></span>
 						<p class="type">Studio</p>
 						<p class="price">Starting at $1,295</p>
 						<span class="sep-left"></span>
 						<span class="sep-right"></span>
 					</a>
-					<a href="#04">
-						<span>04</span>
-						<img src="<?php echo MAINURL."img/04-indicator.png"; ?>" alt="04" />
+					<a id="fp-04" href="#04">
+						<span class="unit">04</span>
+						<span class="indicator"></span>
 						<p class="type">One Bedroom <em>Plus</em></p>
 						<p class="price">Starting at $1,595</p>
 						<span class="sep-left"></span>
 						<span class="sep-right"></span>
 					</a>
-					<a href="#05">
-						<span>05</span>
-						<img src="<?php echo MAINURL."img/05-indicator.png"; ?>" alt="05" />
+					<a id="fp-05" href="#05">
+						<span class="unit">05</span>
+						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,295</p>
 						<span class="sep-left"></span>
 						<span class="sep-right"></span>
 					</a>
-					<a href="#06">
-						<span>06</span>
-						<img src="<?php echo MAINURL."img/06-indicator.png"; ?>" alt="06" />
+					<a id="fp-06" href="#06">
+						<span class="unit">06</span>
+						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,495</p>
 						<span class="sep-left"></span>
@@ -67,6 +72,7 @@
 		
 		<section class="fp-amenities">
 		</section>
+		
 		
 		
 
@@ -168,6 +174,24 @@
 				e.preventDefault();
 				$('.fp-content').removeClass('show-availability').addClass('show-floorplan');
 			});
+			
+			//Condense FP Nav on scroll
+			$(document).scroll(function(){
+
+				var docScroll = $(document).scrollTop(), 
+				navOffset = $(".fp-content").offset().top - 150;
+
+				//when rich top of boxex than fire
+				if(docScroll >= navOffset ) {
+					$(".fp-nav").addClass('condensed');
+				} else {
+					$(".fp-nav").removeClass('condensed');
+					
+					
+				}
+			});
 		</script>
+		
+		
 
 <?php include($_SERVER['DOCUMENT_ROOT']."/the-tower-at-opop/live-site/template/footer.inc.php"); ?>

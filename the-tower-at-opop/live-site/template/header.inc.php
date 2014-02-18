@@ -10,7 +10,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+		
+		<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php echo MAINURL."css/normalize.min.css"; ?>">
         <link rel="stylesheet" href="<?php echo MAINURL."css/main.css"; ?>">
 
