@@ -1,8 +1,10 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/the-tower-at-opop/live-site/template/header.inc.php"); ?>
 <link rel="stylesheet" href="<?php echo MAINURL."css/rwd-table.css"; ?>" />
+<link rel="stylesheet" href="<?php echo MAINURL."css/flexslider.css"; ?>" />
 <script src="<?php echo MAINURL."js/vendor/respond.js"; ?>"></script>
 <script src="<?php echo MAINURL."js/vendor/jquery-ui.widget.min.js"; ?>"></script>
 <script src="<?php echo MAINURL."js/rwd-table.js"; ?>"></script>
+<script src="<?php echo MAINURL."js/jquery.flexslider-min.js"; ?>"></script>
 
 		<section class="units">
 			<nav class="fp-nav">
@@ -62,15 +64,36 @@
 			</nav>
 			
 			<div class="fp-content show-floorplan clearfix">
+				<div class="fp-loading" style="display: none;">
+					Loading content...
+				</div>
 				<div class="fp-default">
-					<div style="width: 100%; background: red; height: 500px;">
-						<p>test 01</p>
-					</div>
 				</div>
 			</div>
 		</section>
 		
 		<section class="fp-amenities">
+			<div class="content">
+				<h2>Amenities &amp; Finishes</h2>
+				<div id="amenities-images" style=" width: 500px;">
+					<div class="flexslider">
+					  <ul class="slides">
+					    <li>
+					      <img src="slide1.jpg" />
+					    </li>
+					    <li>
+					      <img src="slide2.jpg" />
+					    </li>
+					    <li>
+					      <img src="slide3.jpg" />
+					    </li>
+					    <li>
+					      <img src="slide4.jpg" />
+					    </li>
+					  </ul>
+					</div>
+				</div>
+			</div>		
 		</section>
 		
 		
@@ -159,20 +182,20 @@
 				$(this).addClass('active');
 			})
 			
-			//Active States for Toggle Nav
-			$('.toggle-nav a').click(function(e){
+			//Toggle Nav Buttons
+			$('body').on( "click", '#avail-button, .fp-info a.button' ,function(e){
 				e.preventDefault();
-				$('.toggle-nav a').removeClass('active');
-				$(this).addClass('active');
-			})
-			
-			$('#avail-button').click(function(e){
-				e.preventDefault();
+				$("html, body").animate({ scrollTop: "170px" });
 				$('.fp-content').removeClass('show-floorplan').addClass('show-availability');
+				$('.toggle-nav a').removeClass('active');
+				$('.toggle-nav a:last-child').addClass('active');
 			});
 			$('#fp-button').click(function(e){
 				e.preventDefault();
+				$("html, body").delay(100).animate({ scrollTop: "170px" },1000,"easeInOutQuart");
 				$('.fp-content').removeClass('show-availability').addClass('show-floorplan');
+				$('.toggle-nav a').removeClass('active');
+				$('.toggle-nav a:first-child').addClass('active');
 			});
 			
 			//Condense FP Nav on scroll
