@@ -170,43 +170,49 @@
 		    var unit = $.param.fragment();
 			var url = unit + '.php';
 			
-    
-		    // Remove .bbq-current class from any previously "current" link(s).
-		    $( 'a.fp-current' ).removeClass( 'fp-current' );
-    
-		    // Hide any visible ajax content.
-		    $( '.fp-content' ).children( ':visible' ).hide().removeClass('current');
-    
-		    // Add .bbq-current class to "current" nav link(s), only if url isn't empty.
-		    url && $( 'a[href="#' + unit + '"]' ).addClass( 'fp-current' );
-    
+	    	// Remove .bbq-current class from any previously "current" link(s).
+	    	$( 'a.fp-current' ).removeClass( 'fp-current' );
+	    	
+	    	// Add .bbq-current class to "current" nav link(s), only if url isn't empty.
+	    	url && $( 'a[href="#' + unit + '"]' ).addClass( 'fp-current' );   	
+		    	
+			// Hide any visible ajax content.
+	    	$( '.fp-content' ).children( ':visible' ).hide().removeClass('current');
+
 		    if ( cache[ url ] ) {
 		      // Since the element is already in the cache, it doesn't need to be
 		      // created, so instead of creating it again, let's just show it!
-		      cache[ url ].addClass('current').show();
-      
+			  cache[ url ].fadeIn();
+			  $(this).find('.fp-image img').hide();
+			  $(this).find('.fp-image img').fadeIn();
+			  setTimeout(function () {
+		      	cache[ url ].addClass('current');
+			}, 700);
+			
+  
 		    } else {
 		      // Show "loading" content while AJAX content loads.
-			  $('.fp-item').hide();
 		      $( '.fp-loading' ).show();
-      
+  
 		      // Create container for this url's content and store a reference to it in
 		      // the cache.
 			  $('.fp-item').removeClass('current');
 		      cache[ url ] = $( '<div class="fp-item clearfix"/>' )
-        
+    
 		        // Append the content container to the parent container.
 		        .appendTo( '.fp-content' )
-        
+    
 		        // Load external content via AJAX. Note that in order to keep this
 		        // example streamlined, only the content in .infobox is shown. You'll
 		        // want to change this based on your needs.
 		        .load( pathname + url, function(){
 		          // Content loaded, hide "loading" content.
 		          $( '.fp-loading' ).hide();
-				  $(this).addClass('current');				  
+				  $(this).addClass('current');
+				  				  
 		        });
 		    }
+			
 		  })
   
 		  // Since the event is only triggered when the hash changes, we need to trigger
@@ -223,15 +229,16 @@
 			});
 			$( document ).ready(function() {
 				if(window.location.href == "http://opoptower.localhost.com/missouri/st-louis/the-tower-at-opop/apartments"){
-						$('#fp-01').trigger( 'click' );
+						//$('#fp-01').trigger( 'click' );
+						window.location.hash = "01";
 				}
 			});
-			
+					
 					
 			//Toggle Nav Buttons
 			$('body').on( "click", '#avail-button, .fp-info a.button' ,function(e){
 				e.preventDefault();
-				$("html, body").delay(100).animate({ scrollTop: "170px" },1000,"easeInOutQuart");
+				$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
 				$('.fp-content').removeClass('show-floorplan').addClass('show-availability');
 				$('.toggle-nav a').removeClass('active');
 				$('.toggle-nav a:last-child').addClass('active');
@@ -245,7 +252,7 @@
 			});
 			$('#fp-button').click(function(e){
 				e.preventDefault();
-				$("html, body").delay(100).animate({ scrollTop: "170px" },1000,"easeInOutQuart");
+				$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
 				$('.fp-content').removeClass('show-availability').addClass('show-floorplan');
 				$('.toggle-nav a').removeClass('active');
 				$('.toggle-nav a:first-child').addClass('active');
@@ -258,8 +265,21 @@
 				});  
 			});
 			
+			//FP Nav Buttons
+			$('.fp-nav a').click(function(){
+				$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
+
+
+				// Stop the animation if the user scrolls. Defaults on .stop() should be fine
+				$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+				    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+				         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
+				    }
+				});  
+			});
 			
 			
+			//Call RWD Table for Ajax Loaded Elements
 			$( document ).ajaxComplete(function() {	
 				
 				  $(".available-apartments").table({
@@ -278,7 +298,7 @@
 				var docScroll = $(document).scrollTop(), 
 				navOffset = $(".fp-content").offset().top - 150;
 
-				//when rich top of boxex than fire
+				
 				if(docScroll >= navOffset ) {
 					$(".fp-nav").addClass('condensed');
 				} else {
@@ -286,11 +306,6 @@
 				}
 			});
 			
-			//Lose FP Nav When Amenities are reached
-			//var amenitiesTop = $('.fp-amenities').offset().top();
-			//$(window).resize(function(){
-				
-			//});
 			
 			//Call FlexSlider
 			$(window).load(function() {

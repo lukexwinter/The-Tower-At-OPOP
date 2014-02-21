@@ -388,9 +388,39 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 	margin: 281px 0 0 0; background: url('../img/bg-06-blue.jpg') no-repeat top center; background-size: cover; padding: 100px 0; height: 900px;
 }
 .fp-item { max-width: 1140px; margin: 0 auto; }
-.fp-item .fp-image { width: 48.245614%; /*550/1140*/ text-align: center; margin-right: 10.263158%; /*1170/1140*/ float: left; }
+.fp-item .fp-image { 
+	width: 48.245614%; /*550/1140*/ text-align: center; margin-right: 0%; float: left; 
+	transition: all 1s;
+	-moz-transition: margin-right .5s ease-out;
+	-ms-transition: margin-right .5s ease-out;
+	-o-transition: margin-right .5s ease-out;
+	-webkit-transition: margin-right .5s ease-out;
+}
+.fp-item.current .fp-image { 
+	margin-right: 10.263158%; /*1170/1140*/
+	transition: margin-right .5s;
+	-moz-transition: margin-right .5s;
+	-ms-transition: margin-right .5s;
+	-o-transition: margin-right .5s;
+	-webkit-transition: margin-right .5s;
+}
 .fp-item .fp-image img { max-width: 100%; }
-.fp-item .fp-info { width: 40.087719%; /*457/1140*/ float: left; color: #fff; }
+.fp-item .fp-info { 
+	width: 40.087719%; /*457/1140*/ float: left; color: #fff; opacity: 0;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+}
+.fp-item.current .fp-info {
+	opacity: 1;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+}
 .fp-item .fp-info img { display: none; max-width: 100%; }
 .fp-item .fp-info h1 { font-size: 80px; font-family: 'gotham-light'; margin: 130px 0 -15px 0; font-weight: normal; }
 .fp-item .fp-info p { margin: 0; font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-style: italic; font-size: 19px; letter-spacing: 1px; line-height: 1.2; }	
@@ -553,7 +583,7 @@ footer .bottom p#terms { font-size: 9px; }
 	.toggle-nav a { width: 50%; }
 	
 	/*FP Info*/
-	.fp-content { margin: 0; height: auto; text-align: center; }
+	.fp-content { margin: 0; min-height: 1000px; height: auto; text-align: center; }
 	.fp-image { display: none; }
 	.fp-item .fp-info { width: 90%; margin: 0 5%; }
 	.fp-item a.button { width: 100%; }
