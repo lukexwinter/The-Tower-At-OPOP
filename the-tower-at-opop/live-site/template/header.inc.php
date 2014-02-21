@@ -12,15 +12,16 @@
         <meta name="viewport" content="width=device-width">
 		
 		<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="<?php echo MAINURL."css/normalize.min.css"; ?>">
-        <link rel="stylesheet" href="<?php echo MAINURL."css/main.css"; ?>">
+        <link rel="stylesheet" href="<?php echo MAINURL."live-site/css/normalize.min.css"; ?>">
+        <link rel="stylesheet" href="<?php echo MAINURL."live-site/css/main.css"; ?>">
+		<link rel="stylesheet" href="<?php echo MAINURL."live-site/css/animate.css"; ?>">
 
-        <script src="<?php echo MAINURL."js/vendor/modernizr-2.6.2.min.js"; ?>"></script>
+        <script src="<?php echo MAINURL."live-site/js/vendor/modernizr-2.6.2.min.js"; ?>"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="<?php echo MAINURL."js/vendor/jquery-1.10.1.min.js"; ?>"><\/script>')</script>
+		<script>window.jQuery || document.write('<script src="<?php echo MAINURL."live-site/js/vendor/jquery-1.10.1.min.js"; ?>"><\/script>')</script>
 
-		<script src="<?php echo MAINURL."js/plugins.js"; ?>"></script>
-		<script src="<?php echo MAINURL."js/main.js"; ?>"></script>
+		<script src="<?php echo MAINURL."live-site/js/plugins.js"; ?>"></script>
+		<script src="<?php echo MAINURL."live-site/js/main.js"; ?>"></script>
 		<script>
 			$(document).ready(function() {
 				//mobile menu button toggle
@@ -37,7 +38,7 @@
         <![endif]-->
         <header class="collapsed">
 			<nav>
-				<a href=""><img id="tower-opop-logo" width="258" height="59" src="<?php echo MAINURL."img/tower-opop-logo.png"; ?>" alt="The Tower - OPOP" /></a>
+				<a href=""><img id="tower-opop-logo" width="258" height="59" src="<?php echo MAINURL."live-site/img/tower-opop-logo.png"; ?>" alt="The Tower - OPOP" /></a>
 				<ul>
 					<li class="menu-button">
 						<a href="">
@@ -46,8 +47,8 @@
 							<span style="margin: 0;"></span>
 						</a>
 					</li>
-					<li class="tower-logo"><a href=""><img width="163" height="38" src="<?php echo MAINURL."img/tower-opop-logo.png"; ?>" alt="The Tower" /></a></li>
-					<li><a href="">Apartments</a></li>
+					<li class="tower-logo"><a href="<?php echo MAINURL.""; ?>"><img width="163" height="38" src="<?php echo MAINURL."live-site/img/tower-opop-logo.png"; ?>" alt="The Tower" /></a></li>
+					<li><a href="<?php echo MAINURL."apartments"; ?>">Apartments</a></li>
 					<li><a href="">Penthouses</a></li>
 					<li><a href="">The Tower</a></li>
 					<li><a href="">Photo Gallery</a></li>

@@ -4,7 +4,7 @@
 				<h2>Experience St. Louis From a Whole New Perspective</h2>
 				<p>Breathtaking views high above Old Post Office Plaza</p>
 			</article>
-			<img id="scroll-indicator" width="43" height="23" src="<?php echo MAINURL."img/down-arrow.png"; ?>" alt="" />
+			<img id="scroll-indicator" width="43" height="23" src="<?php echo MAINURL."live-site/img/down-arrow.png"; ?>" alt="" />
 		</section>
 
 		<section id="apartments" class="scrollsections">
@@ -42,8 +42,8 @@
 		
 
         
-		<script src="<?php echo MAINURL."js/jquery.scrollSections.js"; ?>"></script>
-		<script src="<?php echo MAINURL."js/jquery.flexverticalcenter.js"; ?>"></script>
+		<script src="<?php echo MAINURL."live-site/js/jquery.scrollSections.js"; ?>"></script>
+		<script src="<?php echo MAINURL."live-site/js/jquery.flexverticalcenter.js"; ?>"></script>
 		
 		<script>
 		$(document).ready(function() {

@@ -1,7 +1,7 @@
 <footer id="footer" class="scrollsections">
 	<div class="content top clearfix">
 		<div class="col5">
-			<img src="<?php echo MAINURL."img/opop-footer-logo.png"; ?>" width="88" height="28" alt="OPOP" />
+			<img src="<?php echo MAINURL."live-site/img/opop-footer-logo.png"; ?>" width="88" height="28" alt="OPOP" />
 			<p>
 				The Tower at OPOP<br />
 				901 Locust Street St. Louis, MO 63101<br /> 

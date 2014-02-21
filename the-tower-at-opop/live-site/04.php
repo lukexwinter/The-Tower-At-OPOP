@@ -1,7 +1,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/the-tower-at-opop/live-site/includes/constants.php"); ?>
 <div class="floorplan">
 	<div class="fp-image">
-		<img src="<?php echo MAINURL."img/04-floorplan.png"; ?>" alt="" />
+		<img src="<?php echo MAINURL."live-site/img/04-floorplan.png"; ?>" alt="" />
 	</div>
 	<div class="fp-info">
 		<h1>04</h1>
@@ -10,7 +10,7 @@
 			Floors 3-23
 		</p>
 		<div style="clear: both;"></div>
-		<img src="<?php echo MAINURL."img/04-floorplan.png"; ?>" alt="" />
+		<img src="<?php echo MAINURL."live-site/img/04-floorplan.png"; ?>" alt="" />
 		<p class="starting-price">Starting at $1,295</p>
 		<a href="#" class="button desktop">View Availability</a>
 		<ul class="clearfix">
@@ -26,7 +26,7 @@
 	
 	<h1>04 Availability</h1>
 	<div class="table-wrapper">
-		<table id="available-apartments" cellspacing="0">
+		<table class="available-apartments" cellspacing="0">
 		   <thead>
 		      <tr>
 		         <th class="persist essential">Unit #</th>
@@ -188,13 +188,3 @@
 		</table>
 	</div><!-- /table-wrapper -->
 </div>
-<script>
-$(function(){ // on DOM ready
-
-   $("#available-apartments").table({
-      idprefix: "co-",
-      persist: "persist"
-   });
-
-});  // end DOM ready
-</script>

@@ -1,10 +1,10 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/the-tower-at-opop/live-site/template/header.inc.php"); ?>
-<link rel="stylesheet" href="<?php echo MAINURL."css/rwd-table.css"; ?>" />
-<link rel="stylesheet" href="<?php echo MAINURL."css/flexslider.css"; ?>" />
-<script src="<?php echo MAINURL."js/vendor/respond.js"; ?>"></script>
-<script src="<?php echo MAINURL."js/vendor/jquery-ui.widget.min.js"; ?>"></script>
-<script src="<?php echo MAINURL."js/rwd-table.js"; ?>"></script>
-<script src="<?php echo MAINURL."js/jquery.flexslider-min.js"; ?>"></script>
+<link rel="stylesheet" href="<?php echo MAINURL."live-site/css/rwd-table.css"; ?>" />
+<link rel="stylesheet" href="<?php echo MAINURL."live-site/css/flexslider.css"; ?>" />
+<script src="<?php echo MAINURL."live-site/js/vendor/respond.js"; ?>"></script>
+<script src="<?php echo MAINURL."live-site/js/vendor/jquery-ui.widget.min.js"; ?>"></script>
+<script src="<?php echo MAINURL."live-site/js/rwd-table.js"; ?>"></script>
+<script src="<?php echo MAINURL."live-site/js/jquery.flexslider-min.js"; ?>"></script>
 
 		<section class="units">
 			<nav class="fp-nav">
@@ -72,25 +72,73 @@
 			</div>
 		</section>
 		
-		<section class="fp-amenities">
+		<section class="fp-amenities clearfix">
 			<div class="content">
 				<h2>Amenities &amp; Finishes</h2>
-				<div id="amenities-images" style=" width: 500px;">
+				<div id="amenities-images">
 					<div class="flexslider">
 					  <ul class="slides">
 					    <li>
-					      <img src="slide1.jpg" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="slide2.jpg" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="slide3.jpg" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="slide4.jpg" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
 					    </li>
 					  </ul>
+					</div>
+				</div>
+				<div class="area-amenities clearfix">
+					<div class="col3">
+						<ul class="amenities-list">
+							<li class="title">Bathroom</li>
+							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li>Mid-America Tile “Clay Series” Grey</li>
+							<li>GTI Quarz Surface</li>
+							<li>Azrock Vinyl Enhanced Tile</li>
+						</ul>
+						<ul class="amenities-list">
+							<li class="title">Bedroom</li>
+							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li>Mid-America Tile “Clay Series” Grey</li>
+							<li>GTI Quarz Surface</li>
+							<li>Azrock Vinyl Enhanced Tile</li>
+						</ul>
+						<ul class="amenities-list">
+							<li class="title">Living Area</li>
+							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li>Mid-America Tile “Clay Series” Grey</li>
+							<li>GTI Quarz Surface</li>
+							<li>Azrock Vinyl Enhanced Tile</li>
+						</ul>
+					</div>
+					<div class="col3">
+						<ul class="amenities-list">
+							<li class="title">Fitness Center</li>
+							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li>Mid-America Tile “Clay Series” Grey</li>
+							<li>GTI Quarz Surface</li>
+							<li>Azrock Vinyl Enhanced Tile</li>
+						</ul>
+						<ul class="amenities-list">
+							<li class="title">Clubroom</li>
+							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li>Mid-America Tile “Clay Series” Grey</li>
+							<li>GTI Quarz Surface</li>
+							<li>Azrock Vinyl Enhanced Tile</li>
+						</ul>
+						<ul class="amenities-list">
+							<li class="title">Lobby</li>
+							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li>Mid-America Tile “Clay Series” Grey</li>
+							<li>GTI Quarz Surface</li>
+							<li>Azrock Vinyl Enhanced Tile</li>
+						</ul>
 					</div>
 				</div>
 			</div>		
@@ -100,7 +148,7 @@
 		
 
         
-		<script src="<?php echo MAINURL."js/jquery.bbq.js"; ?>"></script>
+		<script src="<?php echo MAINURL."live-site/js/jquery.bbq.js"; ?>"></script>
 		<script>
 		$(function(){
   
@@ -119,30 +167,33 @@
     
 		    // Get the hash (fragment) as a string, with any leading # removed. Note that
 		    // in jQuery 1.4, you should use e.fragment instead of $.param.fragment().
-		    var url = $.param.fragment();
-			var url = url + '.php'
+		    var unit = $.param.fragment();
+			var url = unit + '.php';
+			
     
 		    // Remove .bbq-current class from any previously "current" link(s).
 		    $( 'a.fp-current' ).removeClass( 'fp-current' );
     
 		    // Hide any visible ajax content.
-		    $( '.fp-content' ).children( ':visible' ).hide();
+		    $( '.fp-content' ).children( ':visible' ).hide().removeClass('current');
     
 		    // Add .bbq-current class to "current" nav link(s), only if url isn't empty.
-		    url && $( 'a[href="#' + url + '"]' ).addClass( 'fp-current' );
+		    url && $( 'a[href="#' + unit + '"]' ).addClass( 'fp-current' );
     
 		    if ( cache[ url ] ) {
 		      // Since the element is already in the cache, it doesn't need to be
 		      // created, so instead of creating it again, let's just show it!
-		      cache[ url ].show();
+		      cache[ url ].addClass('current').show();
       
 		    } else {
 		      // Show "loading" content while AJAX content loads.
+			  $('.fp-item').hide();
 		      $( '.fp-loading' ).show();
       
 		      // Create container for this url's content and store a reference to it in
 		      // the cache.
-		      cache[ url ] = $( '<div class="fp-item"/>' )
+			  $('.fp-item').removeClass('current');
+		      cache[ url ] = $( '<div class="fp-item clearfix"/>' )
         
 		        // Append the content container to the parent container.
 		        .appendTo( '.fp-content' )
@@ -153,6 +204,7 @@
 		        .load( pathname + url, function(){
 		          // Content loaded, hide "loading" content.
 		          $( '.fp-loading' ).hide();
+				  $(this).addClass('current');				  
 		        });
 		    }
 		  })
@@ -168,27 +220,28 @@
 			//Always start with the 01 Floor Plan if no floor plan is set
 			$('#fp-01').click( function (e) {
 			  window.location.href = this.href;
-			  $(this).addClass('active');
 			});
 			$( document ).ready(function() {
 				if(window.location.href == "http://opoptower.localhost.com/missouri/st-louis/the-tower-at-opop/apartments"){
 						$('#fp-01').trigger( 'click' );
 				}
 			});
-		
-			//Active States for FP Nav
-			$('.fp-nav .content a').click(function(){
-				$('.fp-nav .content a').removeClass('active');
-				$(this).addClass('active');
-			})
 			
+					
 			//Toggle Nav Buttons
 			$('body').on( "click", '#avail-button, .fp-info a.button' ,function(e){
 				e.preventDefault();
-				$("html, body").animate({ scrollTop: "170px" });
+				$("html, body").delay(100).animate({ scrollTop: "170px" },1000,"easeInOutQuart");
 				$('.fp-content').removeClass('show-floorplan').addClass('show-availability');
 				$('.toggle-nav a').removeClass('active');
 				$('.toggle-nav a:last-child').addClass('active');
+				
+				// Stop the animation if the user scrolls. Defaults on .stop() should be fine
+				$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+				    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+				         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
+				    }
+				});  
 			});
 			$('#fp-button').click(function(e){
 				e.preventDefault();
@@ -196,7 +249,28 @@
 				$('.fp-content').removeClass('show-availability').addClass('show-floorplan');
 				$('.toggle-nav a').removeClass('active');
 				$('.toggle-nav a:first-child').addClass('active');
+				
+				// Stop the animation if the user scrolls. Defaults on .stop() should be fine
+				$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+				    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+				         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
+				    }
+				});  
 			});
+			
+			
+			
+			$( document ).ajaxComplete(function() {	
+				
+				  $(".available-apartments").table({
+				     idprefix: "co-",
+				     persist: "persist"
+				  });
+				
+			});
+			
+			
+			
 			
 			//Condense FP Nav on scroll
 			$(document).scroll(function(){
@@ -209,11 +283,24 @@
 					$(".fp-nav").addClass('condensed');
 				} else {
 					$(".fp-nav").removeClass('condensed');
-					
-					
 				}
 			});
+			
+			//Lose FP Nav When Amenities are reached
+			//var amenitiesTop = $('.fp-amenities').offset().top();
+			//$(window).resize(function(){
+				
+			//});
+			
+			//Call FlexSlider
+			$(window).load(function() {
+			  $('.flexslider').flexslider({
+			    animation: "slide"
+			  });
+			});
 		</script>
+		
+		
 		
 		
 
