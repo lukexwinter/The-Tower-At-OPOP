@@ -68,8 +68,8 @@
 			</nav>
 			
 			<div class="fp-content show-floorplan clearfix">
-				<a href="" id="prev-plan">Back</a>
-				<a href="" id="next-plan">Next</a>
+				<a href="" id="prev-plan"><img src="<?php echo MAINURL."live-site/img/left-arrow.png"; ?>" alt="" /></a>
+				<a href="" id="next-plan"><img src="<?php echo MAINURL."live-site/img/right-arrow.png"; ?>" alt="" /></a>
 				<div id="fp-loading" class="wrapper" style="display: none;"></div>
 				<div class="fp-default"></div>
 				
