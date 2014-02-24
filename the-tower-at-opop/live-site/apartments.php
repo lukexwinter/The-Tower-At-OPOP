@@ -5,6 +5,10 @@
 <script src="<?php echo MAINURL."live-site/js/vendor/jquery-ui.widget.min.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/rwd-table.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/jquery.flexslider-min.js"; ?>"></script>
+<script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>
+
+
+
 
 		<section class="units">
 			<nav class="fp-nav">
@@ -64,11 +68,11 @@
 			</nav>
 			
 			<div class="fp-content show-floorplan clearfix">
-				<div class="fp-loading" style="display: none;">
-					Loading content...
-				</div>
-				<div class="fp-default">
-				</div>
+				<a href="" id="prev-plan">Back</a>
+				<a href="" id="next-plan">Next</a>
+				<div id="fp-loading" class="wrapper" style="display: none;"></div>
+				<div class="fp-default"></div>
+				
 			</div>
 		</section>
 		
@@ -179,25 +183,25 @@
 			// Hide any visible ajax content.
 	    	$( '.fp-content' ).children( ':visible' ).hide().removeClass('current');
 
-		    if ( cache[ url ] ) {
-		      // Since the element is already in the cache, it doesn't need to be
-		      // created, so instead of creating it again, let's just show it!
-			  cache[ url ].fadeIn();
-			  $(this).find('.fp-image img').hide();
-			  $(this).find('.fp-image img').fadeIn();
-			  setTimeout(function () {
-		      	cache[ url ].addClass('current');
-			}, 700);
+			if ( cache[ url ] ) {
+				// Since the element is already in the cache, it doesn't need to be
+				// created, so instead of creating it again, let's just show it!
+				cache[ url ].fadeIn();
+				$(this).find('.fp-image img').hide();
+				$(this).find('.fp-image img').fadeIn();
+				setTimeout(function () {
+					console.log($(this));
+					cache[ url ].addClass('current');
+				}, 700);
 			
-  
 		    } else {
-		      // Show "loading" content while AJAX content loads.
-		      $( '.fp-loading' ).show();
-  
-		      // Create container for this url's content and store a reference to it in
-		      // the cache.
-			  $('.fp-item').removeClass('current');
-		      cache[ url ] = $( '<div class="fp-item clearfix"/>' )
+				// Show "loading" content while AJAX content loads.
+				$( '#fp-loading' ).show();
+
+				// Create container for this url's content and store a reference to it in
+				// the cache.
+				$('.fp-item').removeClass('current');
+				cache[ url ] = $( '<div class="fp-item clearfix"/>' )
     
 		        // Append the content container to the parent container.
 		        .appendTo( '.fp-content' )
@@ -206,15 +210,52 @@
 		        // example streamlined, only the content in .infobox is shown. You'll
 		        // want to change this based on your needs.
 		        .load( pathname + url, function(){
-		          // Content loaded, hide "loading" content.
-		          $( '.fp-loading' ).hide();
-				  $(this).addClass('current');
-				  				  
+		        	// Content loaded, hide "loading" content.
+		     		$( '#fp-loading' ).hide();
+					itemVariable = $(this);
+					itemVariable.find('.fp-image img').hide();
+					itemVariable.find('.fp-image img').fadeIn();
+					setTimeout(function () {
+				  		itemVariable.addClass('current');
+					}, 700);			  
 		        });
 		    }
+		
+			//Create an Array of the existing projects from the project list
+			var plans = $(".fp-nav .content a");
+			var plansArray = [];
+			plans.each(function () {
+				plansArray.push($(this).attr("href").replace("#", ""));
+			});
+			//console.log(plansArray);
+			//console.log('Current URL is ' + url);
+
+			//store the location of the current index of the URL in the project Array
+			var currentPlan = plansArray.indexOf(url.replace(".php", ""));
+			//console.log('Current Plan is ' + currentPlan);
+			
+			//store the next project location to variable and assign it to #next-project link
+			var nextPlan = currentPlan + 1;
+			//console.log('next plan is ' + nextPlan);
+			var nextUrl = "#" + plansArray[nextPlan];
+			if(nextPlan > plansArray.length - 1) {
+				nextUrl = "#" + plansArray[0]
+			}
+			$("#next-plan").attr("href", nextUrl);
+			//console.log('Next URL is ' + nextUrl);
+			//store the previous project location to variable and assign it to #prev-project link
+			var prevPlan = currentPlan - 1;
+			//console.log(prevProject);
+			var prevUrl = "#" + plansArray[prevPlan];
+			if(prevPlan < 0) {
+				prevUrl = "#" + plansArray[plansArray.length - 1]
+			}
+			$("#prev-plan").attr("href", prevUrl)
+			//console.log('Prev URL is ' + prevUrl);
+			// Hide any visible ajax content.
 			
 		  })
-  
+		
 		  // Since the event is only triggered when the hash changes, we need to trigger
 		  // the event now, to handle the hash the page may have loaded with.
 		  $(window).trigger( 'hashchange' );
@@ -250,6 +291,16 @@
 				    }
 				});  
 			});
+			
+			// Stop the animation if the user scrolls. Defaults on .stop() should be fine
+			$('a').click(function(){
+				$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+				    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+				         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
+				    }
+				});
+			});
+			
 			$('#fp-button').click(function(e){
 				e.preventDefault();
 				$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
@@ -257,25 +308,26 @@
 				$('.toggle-nav a').removeClass('active');
 				$('.toggle-nav a:first-child').addClass('active');
 				
-				// Stop the animation if the user scrolls. Defaults on .stop() should be fine
 				$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
 				    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
 				         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
 				    }
-				});  
+				});
 			});
 			
 			//FP Nav Buttons
 			$('.fp-nav a').click(function(){
-				$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
-
-
-				// Stop the animation if the user scrolls. Defaults on .stop() should be fine
-				$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
-				    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
-				         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
-				    }
-				});  
+				if ($('#avail-button').hasClass('active')){
+					//don't scroll
+				} else {
+					$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
+					// Stop the animation if the user scrolls. Defaults on .stop() should be fine
+					$("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+					    if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+					         $("html, body").stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
+					}
+					});  
+				}
 			});
 			
 			
@@ -290,21 +342,26 @@
 			});
 			
 			
-			
-			
 			//Condense FP Nav on scroll
 			$(document).scroll(function(){
 
 				var docScroll = $(document).scrollTop(), 
 				navOffset = $(".fp-content").offset().top - 150;
+				amenitiesOffset = $(".fp-amenities").offset().top - 73;
 
-				
 				if(docScroll >= navOffset ) {
 					$(".fp-nav").addClass('condensed');
 				} else {
 					$(".fp-nav").removeClass('condensed');
 				}
+				
+				if(docScroll >= amenitiesOffset ) {
+					$(".fp-nav").addClass('slide-behind');
+				} else {
+					$(".fp-nav").removeClass('slide-behind');
+				}
 			});
+			
 			
 			
 			//Call FlexSlider
@@ -314,6 +371,24 @@
 			  });
 			});
 		</script>
+		
+		
+		<script type="text/javascript">
+			var cl = new CanvasLoader('fp-loading');
+			cl.setColor('#ffffff'); // default is '#000000'
+			cl.setShape('square'); // default is 'oval'
+			cl.setDiameter(16); // default is 40
+			cl.setDensity(30); // default is 40
+			cl.setRange(0.9); // default is 1.3
+			cl.setFPS(30); // default is 24
+			cl.show(); // Hidden by default
+
+			// This bit is only for positioning - not necessary
+			  var loaderObj = document.getElementById("canvasLoader");
+		 		loaderObj.style.position = "absolute";
+		 		loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
+		 		loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
+		   </script>
 		
 		
 		

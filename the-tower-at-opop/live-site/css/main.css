@@ -291,7 +291,12 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 /***********/
 
 /*Full FP Nav*/
-.fp-nav { width: 100%; top: 73px; margin: 0 auto; background: #f8f8f8; position: fixed; z-index: 1000; }
+.fp-nav { 
+	width: 100%; top: 73px; margin: 0 auto; background: #f8f8f8; position: fixed; z-index: 1000; 
+		-webkit-transition: top .3s ease-in-out;
+		-moz-transition: top .3s ease-in-out;
+		transition: top .3s ease-in-out;
+	}
 .fp-nav .content { height: 174px; }
 .fp-nav a { 
 	display: inline-block; width: 16.666667%; /*190/1140*/ text-align: center; position: relative; text-decoration: none; padding: 15px 0; float: left;
@@ -377,6 +382,8 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .fp-nav.condensed a p.price { opacity: 0; }
 .fp-nav.condensed a .sep-left, .fp-nav.condensed a .sep-right { height: 60px; }
 
+.fp-nav.condensed.slide-behind { top: -73px; }
+
 
 
 .fp-nav .toggle-nav { background: #f2f2f2; text-align: center; }
@@ -446,6 +453,9 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .show-floorplan .availability { display: none; }
 .show-availability .floorplan { display: none; }
 .show-availability .availability { display: block; }
+
+#fp-loading.wrapper { position:absolute; top:50%; left:50%; }
+#prev-plan, #next-plan { display: block !important; }
 
 /*Amenities & Finishes*/
 .fp-amenities { padding: 0 0 75px; }
