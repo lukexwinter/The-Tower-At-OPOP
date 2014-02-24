@@ -51,11 +51,15 @@
 			setInterval(function(){
 				indicateScroll();
 			},8000);
-			$('.scrollsections').scrollSections({
-					scrollMax: 1,
-					speed: 1000,
-					touch: true	
-			});
+			if (Modernizr.touch) {
+				//don't use scrollsections if a touch device
+			} else {
+				$('.scrollsections').scrollSections({
+						scrollMax: 1,
+						speed: 1000,
+						touch: true	
+				});
+			}
 			
 			//initiate verticle center plugin for home scenes
 		    $('.scrollsections article').flexVerticalCenter();

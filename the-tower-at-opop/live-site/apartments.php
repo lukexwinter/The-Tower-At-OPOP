@@ -32,7 +32,7 @@
 						<span class="unit">03</span>
 						<span class="indicator"></span>
 						<p class="type">Studio</p>
-						<p class="price">Starting at $1,295</p>
+						<p class="price">Starting at $1,195</p>
 						<span class="sep-left"></span>
 						<span class="sep-right"></span>
 					</a>
@@ -269,7 +269,7 @@
 			  window.location.href = this.href;
 			});
 			$( document ).ready(function() {
-				if(window.location.href == "http://opoptower.localhost.com/missouri/st-louis/the-tower-at-opop/apartments"){
+				if(window.location.href == "<?php echo MAINURL."apartments"; ?>"){
 						//$('#fp-01').trigger( 'click' );
 						window.location.hash = "01";
 				}
@@ -367,13 +367,14 @@
 			//Call FlexSlider
 			$(window).load(function() {
 			  $('.flexslider').flexslider({
-			    animation: "slide"
+			    animation: "slide",
+				touch: true
 			  });
 			});
 		</script>
 		
 		
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			var cl = new CanvasLoader('fp-loading');
 			cl.setColor('#ffffff'); // default is '#000000'
 			cl.setShape('square'); // default is 'oval'
@@ -388,7 +389,7 @@
 		 		loaderObj.style.position = "absolute";
 		 		loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
 		 		loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
-		   </script>
+		   </script>-->
 		
 		
 		

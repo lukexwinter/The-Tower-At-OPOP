@@ -176,7 +176,7 @@ body {
 	width: 71.929825%; /*820/1140*/
 	margin-left: -35.9649125%; /*410/1140*/
 	text-align: center;
-	padding: 74px 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .scrollsections article h2, .scrollsections article p, .scrollsections article h6 {
@@ -391,7 +391,7 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .fp-nav .toggle-nav a { float: none; padding: 11px 0; text-transform: uppercase; font-family:'gotham-book'; font-size: 11px; letter-spacing: 1px; color: #666666; border-top: 1px solid #eaeaea; }
 .fp-nav .toggle-nav a.active { color: #26799d; background: #fff !important; }
 
-.fp-content { margin: 281px 0 0 0; background: url('../img/bg-06-blue.jpg') no-repeat top center; background-size: cover; padding: 100px 0; height: 900px; position: relative; }
+.fp-content { margin: 281px 0 0 0; background: url('../img/bg-06-blue.jpg') no-repeat top center; background-size: cover; padding: 150px 0; height: 900px; position: relative; }
 .fp-item { max-width: 1140px; margin: 0 auto; }
 .fp-item .fp-image { 
 	width: 48.245614%; /*550/1140*/ text-align: center; margin-right: 0%; float: left; 
@@ -409,7 +409,7 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 	-o-transition: margin-right .5s;
 	-webkit-transition: margin-right .5s;
 }
-.fp-item .fp-image img { max-width: 100%; }
+.fp-item .fp-image img { max-width: 100%; max-height: 700px; }
 .fp-item .fp-info { 
 	width: 40.087719%; /*457/1140*/ float: left; color: #fff; opacity: 0;
 	transition: opacity 1s;
