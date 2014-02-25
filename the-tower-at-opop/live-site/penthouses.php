@@ -10,60 +10,22 @@
 
 
 
-		<section class="units">
+		<section class="penthouses">
 			<nav class="fp-nav">
 				<div class="content clearfix">
-					<a id="fp-01" href="#01">
-						<span class="unit">01</span>
+					<a id="fp-2401" href="#2401">
+						<span class="unit">2401</span>
 						<span class="indicator"></span>
-						<p class="type">One Bedroom</p>
-						<p class="price">Starting at $1,295</p>
+						<p class="type">Penthouse</p>
 						<span class="sep-right"></span>
 					</a>
-					<a id="fp-02" href="#02">
-						<span class="unit">02</span>
+					<a id="fp-2402" href="#2402">
+						<span class="unit">2402</span>
 						<span class="indicator"></span>
-						<p class="type">One Bedroom</p>
-						<p class="price">Starting at $1,295</p>
+						<p class="type">Penthouse</p>
 						<span class="sep-left"></span>
-						<span class="sep-right"></span>
+						
 					</a>
-					<a id="fp-03" href="#03">
-						<span class="unit">03</span>
-						<span class="indicator"></span>
-						<p class="type">Studio</p>
-						<p class="price">Starting at $1,195</p>
-						<span class="sep-left"></span>
-						<span class="sep-right"></span>
-					</a>
-					<a id="fp-04" href="#04">
-						<span class="unit">04</span>
-						<span class="indicator"></span>
-						<p class="type">One Bedroom <em>Plus</em></p>
-						<p class="price">Starting at $1,595</p>
-						<span class="sep-left"></span>
-						<span class="sep-right"></span>
-					</a>
-					<a id="fp-05" href="#05">
-						<span class="unit">05</span>
-						<span class="indicator"></span>
-						<p class="type">One Bedroom</p>
-						<p class="price">Starting at $1,295</p>
-						<span class="sep-left"></span>
-						<span class="sep-right"></span>
-					</a>
-					<a id="fp-06" href="#06">
-						<span class="unit">06</span>
-						<span class="indicator"></span>
-						<p class="type">One Bedroom</p>
-						<p class="price">Starting at $1,495</p>
-						<span class="sep-left"></span>
-					</a>
-				</div>
-				<div class="toggle-nav clearfix">
-					<div>
-						<a id="fp-button" class="active" href="#">Floor Plan</a><a id="avail-button" href="#">Availability</a>
-					</div>
 				</div>
 			</nav>
 			
@@ -166,7 +128,7 @@
 		  // gets the url from the hash and displays either our cached content or fetches
 		  // new content to be displayed.
 		  $(window).bind( 'hashchange', function(e) {
-			 var pathname = window.location.pathname.replace('apartments', '');
+			 var pathname = window.location.pathname.replace('penthouses', '');
 			 var pathname = pathname+'/live-site/'
     
 		    // Get the hash (fragment) as a string, with any leading # removed. Note that
@@ -264,14 +226,10 @@
 		</script>
 		
 		<script>
-			//Always start with the 01 Floor Plan if no floor plan is set
-			$('#fp-01').click( function (e) {
-			  window.location.href = this.href;
-			});
 			$( document ).ready(function() {
-				if(window.location.href == "<?php echo MAINURL."apartments"; ?>"){
+				if(window.location.href == "<?php echo MAINURL."penthouses"; ?>"){
 						//$('#fp-01').trigger( 'click' );
-						window.location.hash = "01";
+						window.location.hash = "2401";
 				}
 			});
 					
@@ -374,7 +332,7 @@
 		</script>
 		
 		
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			var cl = new CanvasLoader('fp-loading');
 			cl.setColor('#ffffff'); // default is '#000000'
 			cl.setShape('square'); // default is 'oval'
@@ -389,7 +347,7 @@
 		 		loaderObj.style.position = "absolute";
 		 		loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
 		 		loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
-		   </script>
+		   </script>-->
 		
 		
 		

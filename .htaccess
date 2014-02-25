@@ -18,6 +18,8 @@ RewriteEngine On
 RewriteRule ^the-tower-at-opop/$																						/missouri/st-louis/the-tower-at-opop [L,R=301]
 RewriteRule ^missouri/st-louis/the-tower-at-opop/vip$																	/the-tower-at-opop/live-site/index.php [L]
 RewriteRule ^missouri/st-louis/the-tower-at-opop/apartments$															/the-tower-at-opop/live-site/apartments.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/penthouses$															/the-tower-at-opop/live-site/penthouses.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/the-tower$																/the-tower-at-opop/live-site/about.php [L]
 RewriteRule ^missouri/st-louis/the-tower-at-opop(/(.*))?$ 																/the-tower-at-opop/$1 [QSA,L]
 
 

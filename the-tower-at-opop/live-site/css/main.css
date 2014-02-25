@@ -381,17 +381,20 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .fp-nav.condensed a .unit {  right: 0; }
 .fp-nav.condensed a p.price { opacity: 0; }
 .fp-nav.condensed a .sep-left, .fp-nav.condensed a .sep-right { height: 60px; }
+.penthouses .fp-nav.condensed a .indicator { opacity: 0; height: 21px; }
+.penthouses .fp-nav.condensed p { margin-top: -5px; }
 
 .fp-nav.condensed.slide-behind { top: -73px; }
 
 
 
 .fp-nav .toggle-nav { background: #f2f2f2; text-align: center; }
-.fp-nav .toggle-nav div { max-width: 1140px; margin: 0 auto; }
+.fp-nav .toggle-nav div { max-width: 1122px; margin: 0 auto; }
 .fp-nav .toggle-nav a { float: none; padding: 11px 0; text-transform: uppercase; font-family:'gotham-book'; font-size: 11px; letter-spacing: 1px; color: #666666; border-top: 1px solid #eaeaea; }
 .fp-nav .toggle-nav a.active { color: #26799d; background: #fff !important; }
 
 .fp-content { margin: 281px 0 0 0; background: url('../img/bg-06-blue.jpg') no-repeat top center; background-size: cover; padding: 150px 0; height: 900px; position: relative; }
+.penthouses .fp-content { margin-top: 246px; height: 700px; }
 .fp-item { max-width: 1140px; margin: 0 auto; }
 .fp-item .fp-image { 
 	width: 48.245614%; /*550/1140*/ text-align: center; margin-right: 0%; float: left; 
@@ -479,6 +482,53 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 
 /*End Apartments*/
 
+/*************/
+/*Penthouses*/
+/***********/
+
+.penthouses .fp-nav a { padding: 21px 0; width: 50%; }
+.penthouses .fp-nav .toggle-nav div { max-width: 1122px; margin: 0 auto; }
+.penthouses .fp-nav .toggle-nav a { width: 16.77777%; padding: 11px 0; }
+.fp-nav a#fp-2401 .indicator { background-image: url('../img/2401-indicator.png'); }
+.fp-nav a#fp-2402 .indicator { background-image: url('../img/2402-indicator.png'); }
+.penthouses .fp-nav a .indicator { width: 145px; height: 114px; background-size: cover; display: inline-block; background-position: center; opacity: 1; }
+
+.penthouses .fp-item .fp-image { 
+	width: 65.087719%; /*742/1140*/ text-align: center; margin-right: 0%; float: left; 
+	transition: all 1s;
+	-moz-transition: margin-right .5s ease-out;
+	-ms-transition: margin-right .5s ease-out;
+	-o-transition: margin-right .5s ease-out;
+	-webkit-transition: margin-right .5s ease-out;
+}
+
+/**/
+.penthouses .fp-item.current .fp-image { 
+	margin-right: 6.263158%; /*1170/1140*/
+	transition: margin-right .5s;
+	-moz-transition: margin-right .5s;
+	-ms-transition: margin-right .5s;
+	-o-transition: margin-right .5s;
+	-webkit-transition: margin-right .5s;
+}
+
+.penthouses .fp-item .fp-info { 
+	width: 26.315789%; /*457/1140*/ float: left; color: #fff; opacity: 0;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+}
+.penthouses .fp-item.current .fp-info {
+	opacity: 1;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+}
+
 
 /*Footer*/
 footer { font-size: 10px; color: #666; background: #e0e1d4; font-family: 'gotham-medium'; }
@@ -501,7 +551,13 @@ footer .bottom p { margin: 0; font-family: 'gotham-light'; }
 footer .bottom p#breadcrumbs { font-size: 11px; text-transform: uppercase; margin: 0 0 5px 0; }
 footer .bottom p#terms { font-size: 9px; }
 
+/****************/
+/***General*****/
+/**************/
 
+nav.nav2 { margin-top: 74px; text-align: center; text-transform: uppercase; text-decoration: none; font-family: 'gotham-light';font-size: 18px; }
+nav.nav2 a { color: #4f92af; text-decoration: none; }
+nav.nav2 a:hover { color: #235a71; }
 
 
 
@@ -563,7 +619,8 @@ footer .bottom p#terms { font-size: 9px; }
 	
 	/*FP Nav*/
 	.fp-nav .content { overflow: hidden; height: 60px; }
-	.fp-nav a .indicator { opacity: 0; height: 21px; }
+	.fp-nav a .indicator, .penthouses .fp-nav a .indicator { opacity: 0; height: 21px; }
+	.penthouses .fp-nav a p { margin: -5px 0 0 0; }
 	.fp-nav a .unit {  right: 0; }
 	.fp-nav a p.price { opacity: 0; }
 	.fp-nav a .sep-left, .fp-nav.condensed a .sep-right { height: 60px; }
@@ -602,12 +659,14 @@ footer .bottom p#terms { font-size: 9px; }
 	.fp-nav { position: relative; }
 	.fp-nav a p { opacity: 0; }
 	.fp-nav a .unit { top: 20px; font-size: 18px; }
-	.toggle-nav a { width: 50%; }
+	.toggle-nav a, .penthouses .fp-nav .toggle-nav a { width: 50%; }
 	
 	/*FP Info*/
 	.fp-content { margin: 0; min-height: 1000px; height: auto; text-align: center; }
+	.penthouses .fp-content { margin: 0; height: auto; min-height: 0; }
 	.fp-image { display: none; }
-	.fp-item .fp-info { width: 90%; margin: 0 5%; }
+	.penthouses .fp-info img { margin: 25px 0 50px 0; }
+	.fp-item .fp-info, .penthouses .fp-info { width: 90% !important; margin: 0 5% !important; }
 	.fp-item a.button { width: 100%; }
 	.fp-item .fp-info h1 { margin: 0 0 10px 0; float: left; }
 	.fp-item .fp-info img { display: inline-block; max-width: 100%; }

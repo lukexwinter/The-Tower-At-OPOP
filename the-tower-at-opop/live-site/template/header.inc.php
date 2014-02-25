@@ -14,7 +14,7 @@
 			$title = "Luxury apartments in downtown St. Louis, Missouri - The Tower at OPOP";
 			$description = "The Tower at OPOP offers luxury one bedroom, one bedroom plus, and studio apartments in St Louis, MO";
 			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span>Location";
+			$breadcrumb = "<span class=\"divider\"> / </span>Apartments";
 		} else if (($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=classico") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=paradiso") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=rossi") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=morelli")) {
 			$title = "Floor Plans and Pricing - Amalfi Stonebriar Apartments - North American Properties";
 			$description = "Check out all of Amalfi Stonebriar Apartments's Floor Plans and Pricing Information!";
@@ -149,9 +149,9 @@
 						</a>
 					</li>
 					<li class="tower-logo"><a href="<?php echo MAINURL."vip"; ?>"><img width="163" height="38" src="<?php echo MAINURL."live-site/img/tower-opop-logo.png"; ?>" alt="The Tower" /></a></li>
-					<li><a href="">Penthouses</a></li>
+					<li><a href="<?php echo MAINURL."penthouses"; ?>">Penthouses</a></li>
 					<li><a href="<?php echo MAINURL."apartments"; ?>">Apartments</a></li>
-					<li><a href="">The Tower</a></li>
+					<li><a href="<?php echo MAINURL."the-tower"; ?>">The Tower</a></li>
 					<li><a href="">Photo Gallery</a></li>
 					<li><a href="">Schedule a Tour</a></li>
 					<li class="last"><a href="">Contact</a></li>
