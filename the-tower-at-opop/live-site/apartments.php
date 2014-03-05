@@ -5,7 +5,8 @@
 <script src="<?php echo MAINURL."live-site/js/vendor/jquery-ui.widget.min.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/rwd-table.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/jquery.flexslider-min.js"; ?>"></script>
-<script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>
+<script src="<?php echo MAINURL."live-site/js/heartcode-canvasloader-min.js"; ?>"></script>
+
 
 
 
@@ -213,7 +214,7 @@
 		        	// Content loaded, hide "loading" content.
 		     		$( '#fp-loading' ).hide();
 					itemVariable = $(this);
-					itemVariable.find('.fp-image img').hide();
+					//itemVariable.find('.fp-image img').hide();
 					itemVariable.find('.fp-image img').fadeIn();
 					setTimeout(function () {
 				  		itemVariable.addClass('current');

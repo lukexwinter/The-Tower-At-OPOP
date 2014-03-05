@@ -5,7 +5,8 @@
 <script src="<?php echo MAINURL."live-site/js/vendor/jquery-ui.widget.min.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/rwd-table.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/jquery.flexslider-min.js"; ?>"></script>
-<script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>
+<script src="<?php echo MAINURL."live-site/js/heartcode-canvasloader-min.js"; ?>"></script>
+
 
 
 
@@ -332,7 +333,7 @@
 		</script>
 		
 		
-		<!--<script type="text/javascript">
+		<script type="text/javascript">
 			var cl = new CanvasLoader('fp-loading');
 			cl.setColor('#ffffff'); // default is '#000000'
 			cl.setShape('square'); // default is 'oval'
@@ -347,7 +348,7 @@
 		 		loaderObj.style.position = "absolute";
 		 		loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
 		 		loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
-		   </script>-->
+		   </script>
 		
 		
 		
