@@ -20,6 +20,11 @@ RewriteRule ^missouri/st-louis/the-tower-at-opop/vip$																	/the-tower
 RewriteRule ^missouri/st-louis/the-tower-at-opop/apartments$															/the-tower-at-opop/live-site/apartments.php [L]
 RewriteRule ^missouri/st-louis/the-tower-at-opop/penthouses$															/the-tower-at-opop/live-site/penthouses.php [L]
 RewriteRule ^missouri/st-louis/the-tower-at-opop/the-tower$																/the-tower-at-opop/live-site/about.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/schedule-tour$															/the-tower-at-opop/live-site/schedule-tour.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/contact$																/the-tower-at-opop/live-site/contact.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/success$																/the-tower-at-opop/live-site/success.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/privacy-policy$														/the-tower-at-opop/live-site/privacy-policy.php [L]
+RewriteRule ^missouri/st-louis/the-tower-at-opop/terms-and-conditions$													/the-tower-at-opop/live-site/terms-and-conditions.php [L]
 RewriteRule ^missouri/st-louis/the-tower-at-opop(/(.*))?$ 																/the-tower-at-opop/$1 [QSA,L]
 
 
