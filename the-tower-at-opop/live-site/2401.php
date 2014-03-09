@@ -15,7 +15,7 @@
 		<a href="#" class="button desktop">Schedule A Tour</a>
 		<ul class="clearfix">
 			<li>1,797 sq ft</li>
-			<li>Two Bedroom</li>
+			<li>Two Bedroom Loft</li>
 			<li>Two Bathroom</li>
 			<li>Balcony Terrace</li>
 			<li><a href="">Download Floor Plan</a></li>

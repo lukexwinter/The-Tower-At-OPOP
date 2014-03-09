@@ -21,15 +21,16 @@
 				<article class="flr24-25 clearfix">
 					<h2>Floors 24-25</h2>
 					<div class="col7">
+						<img class="indicator" src="<?php echo MAINURL."live-site/img/penthouses-circle.png"; ?>" alt="" />
 						<img src="<?php echo MAINURL."live-site/img/about-penthouse.jpg"; ?>" data-0="opacity: 0;" data-300-top-top="opacity: 1;" alt="" />
 					</div>
 					<div class="col4">
 						<div style="position: relative;">
 							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" class="skrollable skrollable-between" src="<?php echo MAINURL."live-site/img/penthouses-circle.png"; ?>" alt="" />
-							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 300px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
+							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
 						</div>
+						<h3>2 Breathtaking Penthouse Lofts</h3>
 						<p>
-							2 Penthouses<br /><br />
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque eget elit fermentum placerat. Duis feugiat gravida justo, vel mattis turpis eleifend vel. Aenean. <br /><br />
 							<a href="">View Penthouses</a>
 						</p>
@@ -37,17 +38,35 @@
 					<div style="clear: both; height: 100px;"></div>
 					
 					<div class="col7">
+						<img class="indicator" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
 						<img src="<?php echo MAINURL."live-site/img/about-fitness.jpg"; ?>" data-0="opacity: 0;" data-300-top-top="opacity: 1;" alt="" />
 					</div>
 					<div class="col4">
 						<div style="position: relative;">
 							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
-							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 300px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
+							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
 						</div>
+						<h3>State-of-the-Art Fitness Center</h3>
 						<p>
-							2 Penthouses<br /><br />
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque eget elit fermentum placerat. Duis feugiat gravida justo, vel mattis turpis eleifend vel. Aenean. <br /><br />
-							<a href="">View Penthouses</a>
+							Get an inspirational start to your day using state-of-the-art fitness equipment while overlooking the entire city. Interactive Fitness on Request classes put convenience and flexibility at your fingertips. <br /><br />
+							<a href="">View Amenities</a>
+						</p>
+					</div>
+					<div style="clear: both; height: 100px;"></div>
+					
+					<div class="col7">
+						<img class="indicator" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
+						<img src="<?php echo MAINURL."live-site/img/about-fitness.jpg"; ?>" data-0="opacity: 0;" data-300-top-top="opacity: 1;" alt="" />
+					</div>
+					<div class="col4">
+						<div style="position: relative;">
+							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
+							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
+						</div>
+						<h3>Resident Club Room & Terrace</h3>
+						<p>
+							The Club Room is a residents only lounge that can also be reserved to impress for any corporate event or personal gathering. An outdoor terrace provides an intimate setting to enjoy a drink while taking in unprecedented city views. <br /><br />
+							<a href="">View Amenities</a>
 						</p>
 					</div>
 				</article>
@@ -56,7 +75,7 @@
 			<div id="about-building" class="seperator">
 				<div class="bg">
 					<div class="content">
-						<p data-0="opacity: 0;" data-300-top-top="opacity: 1;">"This could be a quote about how great the tower is going to be."</p>
+						<p data-0="opacity: 0;" data-300-top-top="opacity: 1;">"Live in downtown STL's most iconic residential building."</p>
 					</div>
 				</div>
 			</div>
@@ -66,7 +85,7 @@
 					<h2>Floors 3-23</h2>
 					<div class="col4">
 						<h3>Floors 3-23 offer a variety of floor plans featuring sweeping city views.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis massa sit amet dolor viverra vestibulum. Integer luctus porttitor orci vel semper. Vivamus in dapibus mauris.</p>
+						<p>The Tower at OPOP sets a new (and much higher) bar for apartment living with downtown’s most iconic residential building. The floor plans feature floor-to-ceiling windows and range from studios to 1 bedroom apartments with flex space. Brand new contemporary finishes serve as mere accents to the spectacular views that start on the third floor and only get better the further up you go.</p>
 						<a href="">View Apartments</a>
 					</div>
 					<div id="swiffycontainer"></div>
@@ -86,27 +105,24 @@
 					<h2>Floors 1-2</h2>
 					<div class="col4">
 						<img src="<?php echo MAINURL."live-site/img/about-perks.jpg"; ?>" alt="" />
+						<h3>Magnolia Hotel St. Louis</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis massa sit amet dolor viverra vestibulum. Integer luctus porttitor orci vel semper. Vivamus in dapibus mauris.
-							<br /><br />
-							<a href="">View V.I.P. Perks</a>
+							We’re excited to announce that the new Magnolia Hotel St. Louis will reopen in early summer, 2014. Tower residents will enjoy exclusive concierge services such as hotel room discounts, room service, dry cleaning, maid services and more with this fantastic partnership.
 						</p>
 					</div>
 					<div class="col4">
 						<img src="<?php echo MAINURL."live-site/img/about-dining.jpg"; ?>" alt="" />
+						<h3>Plaza Level Fine Dining</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis massa sit amet dolor viverra vestibulum. Integer luctus porttitor orci vel semper. Vivamus in dapibus mauris.
-							<br /><br />
-							<a href="">View Amenities</a>
+							The first floor commercial space overlooking Old Post Office Plaza will soon be home to one of downtown’s newest and most exciting eateries. Not only will Tower residents have easy access but can also enjoy a VIP experience. Stay tuned for more information on this new addition to The Tower at OPOP.
 						</p>
 						
 					</div>
 					<div class="col4 last">
 						<img src="<?php echo MAINURL."live-site/img/about-location.jpg"; ?>" alt="" />
+						<h3>Some Culinaria Headline</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis massa sit amet dolor viverra vestibulum. Integer luctus porttitor orci vel semper. Vivamus in dapibus mauris.
-							<br /><br />
-							<a href="">View Location</a>
+							Culinaria Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis massa sit amet dolor viverra vestibulum. Integer luctus porttitor orci vel semper. Vivamus in dapibus mauris.
 						</p>
 					</div>
 				</article>

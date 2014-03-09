@@ -101,22 +101,16 @@
 				<div class="area-amenities clearfix">
 					<div class="col3">
 						<ul class="amenities-list">
-							<li class="title">Bathroom</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
-						</ul>
-						<ul class="amenities-list">
-							<li class="title">Bedroom</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
-						</ul>
-						<ul class="amenities-list">
-							<li class="title">Living Area</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
+							<li class="title">Apartment Finishes</li>
+							<li>GE Stainless steel appliances</li>
+							<li>Mid-America Tile clay series grey tile in bathrooms</li>
+							<li>Sterling finesse frameless shower doors</li>
+							<li>GTI quartz kitchen and bath surfaces</li>
+							<li>Aran Cucine Mia white kitchen &amp; bathroom cabinetry</li>
+							<li>Private balcony</li>
+							<li>Walk-in closets*</li>
+							<li>Benjamin Moore interior paint</li>
+							<li>Armstrong wide plank wood flooring</li>
 							<li>Mid-America Tile “Clay Series” Grey</li>
 							<li>GTI Quarz Surface</li>
 							<li>Azrock Vinyl Enhanced Tile</li>
@@ -124,25 +118,23 @@
 					</div>
 					<div class="col3">
 						<ul class="amenities-list">
-							<li class="title">Fitness Center</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
-						</ul>
-						<ul class="amenities-list">
-							<li class="title">Clubroom</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
-						</ul>
-						<ul class="amenities-list">
-							<li class="title">Lobby</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
+							<li class="title">Community Amenities</li>
+							<li>Luxury Penhouses and Apartments with breathtaking view high above Old Post Office Plaza</li>
+							<li>Amazing penthouse level clubroom</li>
+							<li>State-of-the-art fitness center with Fitness on Request classes</li>
+							<li>Rooftop terrace with incredible views of downtown STL and The Arch</li>
+							<li>Conrolled access with visitor call box</li>
+							<li>Pet Friendly</li>
+							<li>Package signing and reception</li>
+							<li>Business lounge with print shop</li>
+							<li>Parking garage</li>
+							<li>Exclusive OPOP neighborhood perks and discounts</li>
+							<li>Convenient online rent payment and account management</li>
+							<li>Community recycling program</li>
+							<li>Professional onsite management</li>
+							<li>24-hour maintenance</li>
+							<li>Exclusive concierge servieces from Magnolia Hotel including hotel room discounts, maid services, dry cleaning, lounge bar, and room service</li>
+							<li>Optional valet parking</li>
 						</ul>
 					</div>
 				</div>
