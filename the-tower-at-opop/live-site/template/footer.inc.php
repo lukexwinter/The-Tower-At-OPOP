@@ -7,7 +7,25 @@
 				901 Locust Street St. Louis, MO 63101<br /> 
 				<br />
 				314 621 5443<br />
-				<a href="mailto:info@thetoweratopop.com">info@thetoweratopop.com</a>
+				<script type="text/javascript">
+				//<![CDATA[
+				<!--
+				var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+				"=50){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+				".substr(0,ol);}f(\")09,\\\")!+&/5h(9nn530\\\\Rn\\\\720\\\\600\\\\330\\\\600" +
+				"\\\\120\\\\430\\\\t\\\\530\\\\700\\\\220\\\\100\\\\n\\\\420\\\\630\\\\3<6?j" +
+				"p410\\\\##)f6+2/J]H]A[FUFXjG@JK230\\\\qhvqwy0L3jozn$c<_S720\\\\330\\\\020\\" +
+				"\\700\\\\030\\\\530\\\\230\\\\E530\\\\t\\\\000\\\\610\\\\420\\\\<2?\\\"(f};" +
+				"o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;++y)09<i(fi{" +
+				")++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"             ;
+				while(x=eval(x));
+				//-->
+				//]]>
+				</script>
+				<br /><br />
+				Office Hours<br />
+				MON - FRI: 8:30AM - 5:00PM<br />
+				SAT / Sun: By Appointment
 			</p>
 		</div>
 		<div class="col3">
