@@ -119,7 +119,7 @@
 </script>
 <section class="general contact">
 	<div class="content">
-		<h1 class="header">Contact</h1>
+		<h1>Contact</h1>
 		
 	  <div id="formError">
 	    <p></p>

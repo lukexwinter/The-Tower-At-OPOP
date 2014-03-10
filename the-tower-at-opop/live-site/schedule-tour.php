@@ -119,7 +119,7 @@
 </script>
 <section class="general contact">
 	<div class="content">
-		<h1 class="header">Schedule a tour</h1>
+		<h1 class="header">Schedule a Tour</h1>
 		
 	      <div id="formError">
 	        <p></p>

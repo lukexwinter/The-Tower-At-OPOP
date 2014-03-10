@@ -4,7 +4,7 @@
 <script src="<?php echo MAINURL."live-site/js/vendor/respond.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/vendor/jquery-ui.widget.min.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/rwd-table.js"; ?>"></script>
-<script src="<?php echo MAINURL."live-site/js/jquery.flexslider-min.js"; ?>"></script>
+<script src="<?php echo MAINURL."live-site/js/jquery.flexslider.js"; ?>"></script>
 <script src="<?php echo MAINURL."live-site/js/heartcode-canvasloader-min.js"; ?>"></script>
 
 
