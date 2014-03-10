@@ -14,9 +14,9 @@
 		<p class="starting-price">Starting at $1,495</p>
 		<a href="#" class="button desktop">View Availability</a>
 		<ul class="clearfix">
-			<li>995 sq ft</li>
 			<li>One Bedroom</li>
 			<li>One Bathroom</li>
+			<li>995 sq ft</li>
 			<li><a href="">Download Floor Plan</a></li>
 		</ul>
 		<a href="#" class="button mobile">View Availability</a>

@@ -40,7 +40,7 @@
 					<a id="fp-04" href="#04">
 						<span class="unit">04</span>
 						<span class="indicator"></span>
-						<p class="type">One Bedroom <em>Plus</em></p>
+						<p class="type">One Bedroom <em>Plus!</em></p>
 						<p class="price">Starting at $1,595</p>
 						<span class="sep-left"></span>
 						<span class="sep-right"></span>
@@ -84,16 +84,16 @@
 					<div class="flexslider">
 					  <ul class="slides">
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-1.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-2.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-3.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-4.jpg"; ?>" />
 					    </li>
 					  </ul>
 					</div>
@@ -101,44 +101,38 @@
 				<div class="area-amenities clearfix">
 					<div class="col3">
 						<ul class="amenities-list">
-							<li class="title">Apartment Finishes</li>
+							<li class="title">Kitchen &amp; Bathroom</li>
 							<li>GE Stainless steel appliances</li>
-							<li>Mid-America Tile clay series grey tile in bathrooms</li>
-							<li>Sterling finesse frameless shower doors</li>
 							<li>GTI quartz kitchen and bath surfaces</li>
 							<li>Aran Cucine Mia white kitchen &amp; bathroom cabinetry</li>
-							<li>Private balcony</li>
-							<li>Walk-in closets*</li>
-							<li>Benjamin Moore interior paint</li>
+							<li>Mid-America Tile clay series grey tile in bathrooms</li>
+							<li>Sterling finesse frameless shower doors</li>
+						</ul>
+						<ul class="amenities-list">
+							<li class="title">Bedroom</li>
 							<li>Armstrong wide plank wood flooring</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
+							<li>Walk-in closets<span class="sup">*<span></li>
 						</ul>
 					</div>
 					<div class="col3">
 						<ul class="amenities-list">
-							<li class="title">Community Amenities</li>
-							<li>Luxury Penhouses and Apartments with breathtaking view high above Old Post Office Plaza</li>
-							<li>Amazing penthouse level clubroom</li>
-							<li>State-of-the-art fitness center with Fitness on Request classes</li>
-							<li>Rooftop terrace with incredible views of downtown STL and The Arch</li>
-							<li>Conrolled access with visitor call box</li>
-							<li>Pet Friendly</li>
-							<li>Package signing and reception</li>
-							<li>Business lounge with print shop</li>
-							<li>Parking garage</li>
-							<li>Exclusive OPOP neighborhood perks and discounts</li>
-							<li>Convenient online rent payment and account management</li>
-							<li>Community recycling program</li>
-							<li>Professional onsite management</li>
-							<li>24-hour maintenance</li>
-							<li>Exclusive concierge servieces from Magnolia Hotel including hotel room discounts, maid services, dry cleaning, lounge bar, and room service</li>
-							<li>Optional valet parking</li>
+							<li class="title">Living Area</li>
+							<li>Armstrong wide plank wood flooring</li>
+							<li>10-12 foot floor-to-ceiling windows</li>
+							<li>Private balcony*</li>
+						</ul>
+						<ul class="amenities-list">
+							<li class="title">Paint &amp; Utilities</li>
+							<li>Washer / dryer included in every apartment</li>
+							<li>Benjamin Moore interior paint</li>
+							<li>Blazing fast internet and TV options provided by AT&amp;T U-Verse fiber optics</li>
 						</ul>
 					</div>
+					<small style="color: lightgray; font-family: 'muli'; font-size: 11px;">*<em>In select units</em></small>
 				</div>
-			</div>		
+					
+			</div>	
+			
 		</section>
 		
 		

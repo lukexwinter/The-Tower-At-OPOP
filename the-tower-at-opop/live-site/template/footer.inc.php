@@ -67,7 +67,7 @@
 	<div class="bottom">
 		<div class="content">
 			<p id="breadcrumbs"><a href="http://apartments.naproperties.com/" title="North American Properties">North American Properties</a><span class="divider"> / </span><a href="http://apartments.naproperties.com/missouri" title="Missouri Apartments">Missouri Apartments</a><span class="divider"> / </span><a href="http://apartments.naproperties.com/missouri/st-louis" title="St. Louis Apartments">St. Louis Apartments</a><span class="divider"> / </span><a href="<?php echo MAINURL; ?>" title="The Tower at OPOP">The Tower at OPOP</a><?php echo $breadcrumb; ?></p>
-			<p id="terms">Copyright &copy; 2013 North American Properties. All rights reserved. <a class="gray" href="<?php echo MAINURL."privacy-policy"; ?>">Privacy Policy</a>  |  <a class="gray" href="<?php echo MAINURL."terms-and-conditions"; ?>">Terms &amp; Conditions</a></p>
+			<p id="terms">Copyright &copy; 2014 North American Properties. All rights reserved. <a class="gray" href="<?php echo MAINURL."privacy-policy"; ?>">Privacy Policy</a>  |  <a class="gray" href="<?php echo MAINURL."terms-and-conditions"; ?>">Terms &amp; Conditions</a></p>
 		</div>
 	</div>
 </footer>

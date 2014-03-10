@@ -6,7 +6,7 @@
 	<div class="fp-info">
 		<h1>04</h1>
 		<p>
-			One Bedroom<br />
+			One Bedroom PLUS!<br />
 			Floors 3-23
 		</p>
 		<div style="clear: both;"></div>
@@ -14,10 +14,9 @@
 		<p class="starting-price">Starting at $1,595</p>
 		<a href="#" class="button desktop">View Availability</a>
 		<ul class="clearfix">
-			<li>990 sq ft</li>
-			<li>One Bedroom</li>
+			<li>One Bedroom + flex space</li>
 			<li>One Bathroom</li>
-			<li>Flex Space</li>
+			<li>990 sq ft</li>
 			<li><a href="">Download Floor Plan</a></li>
 		</ul>
 		<a href="#" class="button mobile">View Availability</a>

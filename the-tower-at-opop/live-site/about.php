@@ -27,11 +27,12 @@
 					<div class="col4">
 						<div style="position: relative;">
 							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" class="skrollable skrollable-between" src="<?php echo MAINURL."live-site/img/penthouses-circle.png"; ?>" alt="" />
-							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
+							<span style="background-color: #26799d; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #26799d; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
 						</div>
 						<h3>2 Breathtaking Penthouse Lofts</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque eget elit fermentum placerat. Duis feugiat gravida justo, vel mattis turpis eleifend vel. Aenean. <br /><br />
+							Simply put, there is nothing else like this in downtown St. Louis.  These penthouse level two bedroom lofts offer sweeping views from 24-foot floor-to-ceiling windows as far as the eye can see.
+							<br /><br />
 							<a href="">View Penthouses</a>
 						</p>
 					</div>
@@ -44,7 +45,7 @@
 					<div class="col4">
 						<div style="position: relative;">
 							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
-							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
+							<span style="background-color: #26799d; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #26799d; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
 						</div>
 						<h3>State-of-the-Art Fitness Center</h3>
 						<p>
@@ -55,13 +56,13 @@
 					<div style="clear: both; height: 100px;"></div>
 					
 					<div class="col7">
-						<img class="indicator" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
-						<img src="<?php echo MAINURL."live-site/img/about-fitness.jpg"; ?>" data-0="opacity: 0;" data-300-top-top="opacity: 1;" alt="" />
+						<img class="indicator" src="<?php echo MAINURL."live-site/img/terrace-circle.png"; ?>" alt="" />
+						<img src="<?php echo MAINURL."live-site/img/about-terrace.jpg"; ?>" data-0="opacity: 0;" data-300-top-top="opacity: 1;" alt="" />
 					</div>
 					<div class="col4">
 						<div style="position: relative;">
-							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" src="<?php echo MAINURL."live-site/img/fitness-circle.png"; ?>" alt="" />
-							<span style="background-color: #6aa3bc; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #6aa3bc; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
+							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" src="<?php echo MAINURL."live-site/img/terrace-circle.png"; ?>" alt="" />
+							<span style="background-color: #26799d; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #26799d; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
 						</div>
 						<h3>Resident Club Room & Terrace</h3>
 						<p>
@@ -147,7 +148,11 @@
 
 <script>
 	$(window).load(function(){
-		var s = skrollr.init({forceHeight: false});
+		if (Modernizr.touch) {
+			//don't use scrollsections if a touch device
+		} else {
+			var s = skrollr.init({forceHeight: false});
+		}
 	});
 </script>
 <script src="<?php echo MAINURL."live-site/js/skrollr.min.js"; ?>"></script>		

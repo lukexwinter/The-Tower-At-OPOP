@@ -12,14 +12,14 @@
 		<div style="clear: both;"></div>
 		<img src="<?php echo MAINURL."live-site/img/2402-floorplan.png"; ?>" alt="" />
 		<!--<p class="starting-price">Starting at $1,295</p>-->
-		<a href="#" class="button desktop">Schedule A Tour</a>
+		<a href="<?php echo MAINURL."schedule-tour"; ?>" class="button desktop">Schedule A Tour</a>
 		<ul class="clearfix">
-			<li>1,768 sq ft</li>
 			<li>Two Bedroom Loft</li>
 			<li>Two Bathroom</li>
+			<li>1,768 sq ft</li>
 			<li>Balcony Terrace</li>
 			<li><a href="">Download Floor Plan</a></li>
 		</ul>
-		<a href="#" class="button mobile">Schedule A Tour</a>
+		<a href="<?php echo MAINURL."schedule-tour"; ?>" class="button mobile">Schedule A Tour</a>
 	</div>
 </div>

@@ -19,8 +19,8 @@
 						<span class="indicator"></span>
 						<p class="type">Penthouse</p>
 						<span class="sep-right"></span>
-					</a>
-					<a id="fp-2402" href="#2402">
+					</a
+					><a id="fp-2402" href="#2402">
 						<span class="unit">2402</span>
 						<span class="indicator"></span>
 						<p class="type">Penthouse</p>
@@ -46,16 +46,16 @@
 					<div class="flexslider">
 					  <ul class="slides">
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-1.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-2.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-3.jpg"; ?>" />
 					    </li>
 					    <li>
-					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-flooring.jpg"; ?>" />
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-4.jpg"; ?>" />
 					    </li>
 					  </ul>
 					</div>
@@ -63,48 +63,32 @@
 				<div class="area-amenities clearfix">
 					<div class="col3">
 						<ul class="amenities-list">
-							<li class="title">Bathroom</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
+							<li class="title">Kitchen &amp; Bathroom</li>
+							<li>GE Stainless steel appliances</li>
+							<li>GTI quartz kitchen and bath surfaces</li>
+							<li>Aran Cucine Mia white kitchen &amp; bathroom cabinetry</li>
+							<li>Mid-America Tile clay series grey tile in bathrooms</li>
+							<li>Sterling finesse frameless shower doors</li>
 						</ul>
 						<ul class="amenities-list">
-							<li class="title">Bedroom</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
-						</ul>
-						<ul class="amenities-list">
-							<li class="title">Living Area</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
+							<li class="title">Bedrooms</li>
+							<li>Armstrong wide plank wood flooring</li>
+							<li>Second story loft with storefront glass windows</li>
+							<li>Walk-in closets</li>
 						</ul>
 					</div>
 					<div class="col3">
 						<ul class="amenities-list">
-							<li class="title">Fitness Center</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
+							<li class="title">Paint &amp; Utilities</li>
+							<li>Washer / dryer included in every apartment</li>
+							<li>Benjamin Moore interior paint</li>
+							<li>Blazing fast internet and TV options provided by AT&amp;T U-Verse fiber optics</li>
 						</ul>
 						<ul class="amenities-list">
-							<li class="title">Clubroom</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
-						</ul>
-						<ul class="amenities-list">
-							<li class="title">Lobby</li>
-							<li>100% recycleable, non-porous, Porcelanosa Krion® 24” white washbasin.</li>
-							<li>Mid-America Tile “Clay Series” Grey</li>
-							<li>GTI Quarz Surface</li>
-							<li>Azrock Vinyl Enhanced Tile</li>
+							<li class="title">Living Area</li>
+							<li>Armstrong wide plank wood flooring</li>
+							<li>24 foot floor-to-ceiling windows</li>
+							<li>Expansive private balcony</li>
 						</ul>
 					</div>
 				</div>
@@ -236,7 +220,7 @@
 					
 					
 			//Toggle Nav Buttons
-			$('body').on( "click", '#avail-button, .fp-info a.button' ,function(e){
+			$('body').on( "click", '#avail-button' ,function(e){
 				e.preventDefault();
 				$("html, body").delay(100).animate({ scrollTop: $('.fp-content').offset().top - 100 },1000,"easeInOutQuart");
 				$('.fp-content').removeClass('show-floorplan').addClass('show-availability');
