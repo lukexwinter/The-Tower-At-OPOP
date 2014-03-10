@@ -152,9 +152,9 @@
 					<li><a href="<?php echo MAINURL."penthouses"; ?>">Penthouses</a></li>
 					<li><a href="<?php echo MAINURL."apartments"; ?>">Apartments</a></li>
 					<li><a href="<?php echo MAINURL."the-tower"; ?>">The Tower</a></li>
-					<li><a href="<?php echo MAINURL."photo-gallery"; ?>">Photo Gallery</a></li>
-					<li><a href="<?php echo MAINURL."schedule-tour"; ?>">Schedule a Tour</a></li>
-					<li class="last"><a href="<?php echo MAINURL."contact"; ?>">Contact</a></li>
+					<li><a href="">Photo Gallery</a></li>
+					<li><a href="">Schedule a Tour</a></li>
+					<li class="last"><a href="">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
