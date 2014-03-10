@@ -614,6 +614,21 @@ article.flr1-2 .col4 img { max-width: 100%; }
 
 
 
+/*****************************/
+/********Photo Gallery*******/
+/***************************/
+
+section.gallery { padding: 100px 0 50px 0; margin: 0 auto;  }
+section.gallery h1 { font-size: 30px; color: #3b90b3; font-family: 'gotham-light'; font-weight: normal; line-height: 1.3; margin-bottom: 40px; }
+section.gallery .content { width: 82.7094474%; text-align: center; }
+
+section.gallery .flex-direction-nav a { display: block; opacity: 1; width: 23px; height: 43px; text-indent: -9999px; background: url('../img/right-arrow-blue.png') no-repeat; background-size: cover; }
+section.gallery .flex-direction-nav .flex-next { text-indent: 9999px; right: -8%; }
+section.gallery .flex-direction-nav .flex-prev { text-indent: 9999px; background: url('../img/left-arrow-blue.png') no-repeat; background-size: cover; left: -8%; }
+section.gallery .flexslider:hover .flex-prev { left: -8%; }
+section.gallery .flexslider:hover .flex-next { right: -8%; }
+
+
 
 
 /* ==========================================================================
@@ -660,6 +675,9 @@ article.flr1-2 .col4 img { max-width: 100%; }
 	.area-amenities .col3 { width: 40%; margin: 0 10% 0 0; }
 	.flexslider { margin-bottom: 90px !important; }
 	#prev-plan, #next-plan { display: none !important; }
+	
+	/*Photo Gallery*/
+	section.gallery .flex-direction-nav a { display: none; }
 }
 
 @media only screen and (max-width: 890px) {
@@ -683,6 +701,8 @@ article.flr1-2 .col4 img { max-width: 100%; }
 	
 	.fp-content { margin: 170px 0 0 0;}
 	
+	.penthouses .fp-content { margin: 130px 0 0 0; }
+	
 	/*About*/
 	article.flr24-25 .col7 { width: 100%; float: none; margin-bottom: 35px; }
 	article.flr24-25 .col7 img { opacity: 1 !important; }
@@ -693,6 +713,7 @@ article.flr1-2 .col4 img { max-width: 100%; }
 	
 	/*General*/
 	.seperator .bg { background-attachment: scroll; }
+	
 	
 }
 
