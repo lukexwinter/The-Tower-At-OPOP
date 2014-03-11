@@ -17,7 +17,7 @@
 			<li>One Bedroom</li>
 			<li>One Bathroom</li>
 			<li>822 sq ft</li>
-			<li><a href="">Download Floor Plan</a></li>
+			<li><a href="<?php echo MAINURL."live-site/pdf/01.pdf"; ?>" target="_blank">Download Floor Plan</a></li>
 		</ul>
 		<a href="#" class="button mobile">View Availability</a>
 	</div>
@@ -173,18 +173,19 @@
 		      <tr>
  		         <td>401</td>
  		         <td>4</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,295.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>301</td>
  		         <td>3</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,295.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		   </tbody>
 		</table>
+		<small style="text-align: left; color: lightgray; font-size: 11px; margin-top: 25px;">NOTE:<br />Floors 3 &amp; 4 are without balcony</small>
 	</div><!-- /table-wrapper -->
 </div>

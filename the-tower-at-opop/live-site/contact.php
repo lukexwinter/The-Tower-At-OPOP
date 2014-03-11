@@ -74,7 +74,7 @@
 					if(data.success) {
 //						$("#formSuccess p").html(data.message);	
 //						$("#formSuccess").show();	
-						window.location.href = '<?php echo MAINURL."penthouses"; ?>';
+						window.location.href = '<?php echo MAINURL."success"; ?>';
 					} 
 					if(data.error) {
 						$("#formError p").html(data.message);

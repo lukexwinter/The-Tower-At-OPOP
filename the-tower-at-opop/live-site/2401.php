@@ -18,7 +18,7 @@
 			<li>Two Bathroom</li>
 			<li>1,797 sq ft</li>
 			<li>Balcony Terrace</li>
-			<li><a href="">Download Floor Plan</a></li>
+			<li><a href="<?php echo MAINURL."live-site/pdf/2401.pdf"; ?>" target="_blank">Download Floor Plan</a></li>
 		</ul>
 		<a href="<?php echo MAINURL."schedule-tour"; ?>" class="button mobile">Schedule A Tour</a>
 	</div>

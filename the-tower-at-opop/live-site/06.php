@@ -17,7 +17,7 @@
 			<li>One Bedroom</li>
 			<li>One Bathroom</li>
 			<li>995 sq ft</li>
-			<li><a href="">Download Floor Plan</a></li>
+			<li><a href="<?php echo MAINURL."live-site/pdf/06.pdf"; ?>" target="_blank">Download Floor Plan</a></li>
 		</ul>
 		<a href="#" class="button mobile">View Availability</a>
 	</div>
@@ -40,105 +40,105 @@
 		      <tr class="reserved">
 		         <td>2306</td>
 		         <td>23</td>
-		         <td>Yes</td>
+		         <td>No</td>
 		         <td>$1,720.00</td>
 		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>
 		      </tr>      
 		      <tr>
 		         <td>2206</td>
 		         <td>22</td>
-		         <td>Yes</td>
+		         <td>No</td>
 		         <td>$1,690.00</td>
 		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>
 		      </tr>     
 		      <tr>
  		         <td>2106</td>
  		         <td>21</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,690.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>
 		      </tr>       
 		      <tr>
  		         <td>2006</td>
  		         <td>20</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,690.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>
 		      </tr>      
 		      <tr>
  		         <td>1906</td>
  		         <td>19</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,690.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>
 		      </tr>
 		      <tr>
  		         <td>1806</td>
  		         <td>18</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,690.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>
 		      </tr>      
 		      <tr>
  		         <td>1706</td>
  		         <td>17</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,620.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1606</td>
  		         <td>16</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,620.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1506</td>
  		         <td>15</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,620.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1406</td>
  		         <td>14</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,620.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1306</td>
  		         <td>13</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,620.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1206</td>
  		         <td>12</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,560.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1106</td>
  		         <td>11</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,560.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>1006</td>
  		         <td>10</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,560.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
 		      <tr>
  		         <td>906</td>
  		         <td>9</td>
- 		         <td>Yes</td>
+ 		         <td>No</td>
  		         <td>$1,560.00</td>
  		         <td><a class="button" href="">Apply</a><span class="reserved">reserved</span></td>       
 		      </tr>
@@ -186,5 +186,7 @@
 		      </tr>
 		   </tbody>
 		</table>
+		<small style="text-align: left; color: lightgray; font-size: 11px; margin-top: 25px;">NOTE:<br />06 units are without balcony</small>
+		
 	</div><!-- /table-wrapper -->
 </div>

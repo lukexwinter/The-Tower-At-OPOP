@@ -483,6 +483,8 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .area-amenities ul li a { color: #3b90b3; text-decoration: underline; }
 .area-amenities ul li a:hover { text-decoration: none; }
 
+.availability small { display: none; }
+
 /*End Apartments*/
 
 /*************/
@@ -605,7 +607,7 @@ article.flr3-23 #swiffycontainer { width: 58.823529%; /*660/1120*/ margin-top: -
 
 #about-location { margin: 0 0 50px 0;  }
 #about-location .bg { background-image: url('../img/fw-footsteps.jpg'); background-position: center center; }
-#about-location p { text-align: center; width: 500px; margin: 0 auto; padding: 260px 0 0 0; }
+#about-location p { text-align: center; width: 520px; margin: 0 auto; padding: 260px 0 0 0; }
 
 article.flr1-2 .col4 { width: 32.085561%; /*365/1122*/ float: left; margin-right: 1.7825312%; /*20/1122*/ font-family: 'muli'; }
 article.flr1-2 .col4 h3 { color: #3b90b3; font-size: 30px; font-family: 'gotham-light'; text-align: left; line-height: 1.3; font-weight: normal; }
@@ -781,6 +783,7 @@ section.gallery .flexslider:hover .flex-next { right: -8%; }
 	
 	/*Availability*/
 	thead th, th, td { font-size: 11px !important; }
+	.availability small { display: block; }
 	
 	/*About*/
 	article.flr24-25 .col7 .indicator { width: 175px; height: 175px; }

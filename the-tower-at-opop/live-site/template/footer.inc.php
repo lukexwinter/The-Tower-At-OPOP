@@ -31,17 +31,17 @@
 		<div class="col3">
 			<h6>Site Map</h6>
 			<ul>
-				<li><a href="">Apartments</a></li>
-				<li><a href="">Penthouses</a></li>
-				<li><a href="">The Tower</a></li>
-				<li><a href="">Location</a></li>
-				<li><a href="">V.I.P. Perks</a></li>
+				<li><a href="<?php echo MAINURL."apartments"; ?>">Apartments</a></li>
+				<li><a href="<?php echo MAINURL."penthouses"; ?>">Penthouses</a></li>
+				<li><a href="<?php echo MAINURL."the-tower"; ?>">The Tower</a></li>
+				<li><a href="<?php echo MAINURL."location"; ?>">Location</a></li>
+				<li><a href="<?php echo MAINURL."vip-perks"; ?>">V.I.P. Perks</a></li>
 			</ul>
 			<ul>
-				<li><a href="">Amenities</a></li>
-				<li><a href="">Photo Gallery</a></li>
-				<li><a href="">Schedule a Tour</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="<?php echo MAINURL."amenities"; ?>">Amenities</a></li>
+				<li><a href="<?php echo MAINURL."photo-gallery"; ?>">Photo Gallery</a></li>
+				<li><a href="<?php echo MAINURL."schedule-tour"; ?>">Schedule a Tour</a></li>
+				<li><a href="<?php echo MAINURL."contact"; ?>">Contact</a></li>
 			</ul>
 		</div>
 		<div class="col2">
@@ -59,7 +59,7 @@
 			<h6>Residents</h6>
 			<ul>
 				<li><a href="">napLife</a></li>
-				<li><a href="">Sign Out</a></li>
+				<li><a href="#">Sign Out</a></li>
 			</ul>
 		</div>
 	</div>

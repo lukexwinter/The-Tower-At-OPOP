@@ -11,31 +11,31 @@
 			<article>
 				<h2>25 Floors,<br /> 126 luxury apartments</h2>
 				<p>As a V.I.P member, be the first to stake claim on an incredible view.</p>
-				<a href="" class="button">View Apartments</a>
+				<a href="<?php echo MAINURL."apartments"; ?>" class="button">View Apartments</a>
 			</article>
 		</section>
 
 		<section id="amenities" class="scrollsections">
 			<article>
-				<h2>State-of-the-art fitness center &amp; club room</h2>
+				<h2>Penthouse level fitness center &amp; club room</h2>
 				<p>Floors 24-25 let you look out, hang out, or work out. The sky is the limit.</p>
-				<a href="" class="button">View Amenities</a>
+				<a href="<?php echo MAINURL."the-tower"; ?>" class="button">View Amenities</a>
 			</article>
 		</section>
 
 		<section id="location" class="scrollsections">
 			<article>
-				<h2>Located in<br/> downtown St. Louis</h2>
-				<p>Never skip a beat. Experience the heart of  nightlife & entertainment.</p>
-				<a href="" class="button">View Location</a>
+				<h2>Washington Ave</h2>
+				<p>A downtown backyard doesn’t get much better than this.</p>
+				<a href="<?php echo MAINURL."location"; ?>" class="button">View Location</a>
 			</article>
 		</section>
 
 		<section id="perks" class="scrollsections">
 			<article>
 				<h2>Take the high life<br /> on the go.</h2>
-				<p>Our residents are V.I.P. Take advantage of valet parking, and perks.</p>
-				<a href="" class="button">Learn More</a>
+				<p>Our residents are V.I.P. Take advantage of room service,<br /> valet parking and more with your Partner Perk card.</p>
+				<a href="<?php echo MAINURL."vip-perks"; ?>" class="button">Learn More</a>
 			</article>
 		</section>
 		
