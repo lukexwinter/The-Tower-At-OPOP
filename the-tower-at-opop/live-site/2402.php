@@ -15,7 +15,7 @@
 		<a href="<?php echo MAINURL."schedule-tour"; ?>" class="button desktop">Schedule A Tour</a>
 		<ul class="clearfix">
 			<li>Two Bedroom Loft</li>
-			<li>Two Bathroom</li>
+			<li>Two Bathrooms</li>
 			<li>1,768 sq ft</li>
 			<li>Balcony Terrace</li>
 			<li><a href="<?php echo MAINURL."live-site/pdf/2402.pdf"; ?>" target="_blank">Download Floor Plan</a></li>

@@ -29,7 +29,7 @@
 							<img data-0="width: 1px; height: 1px;" data-center-top="width: 266px; height: 266px; z-index: 2; position: relative;" class="skrollable skrollable-between" src="<?php echo MAINURL."live-site/img/penthouses-circle.png"; ?>" alt="" />
 							<span style="background-color: #26799d; height: 3px; width: 500px; top: 50%; display: block; position: absolute; left: 0; z-index: 1;" data-0="width: 1px; left: 100px;" data-center-top="width: 250px; left: 250px;"><span style="background-color: #26799d; width: 9px; height: 9px; display: block; position: absolute; right: 0; top: -3px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;"></span></span>
 						</div>
-						<h3>2 Luxurious Penthouse Lofts</h3>
+						<h3>2 Amazing Penthouse Lofts</h3>
 						<p>
 							Simply put, there is nothing else like this in downtown St. Louis.  These penthouse level two bedroom lofts offer sweeping views from 24-foot floor-to-ceiling windows as far as the eye can see.
 							<br /><br />

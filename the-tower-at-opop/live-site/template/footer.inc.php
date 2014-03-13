@@ -4,7 +4,7 @@
 			<img src="<?php echo MAINURL."live-site/img/opop-footer-logo.png"; ?>" width="88" height="28" alt="OPOP" />
 			<p>
 				The Tower at OPOP<br />
-				901 Locust Street St. Louis, MO 63101<br /> 
+				411 North 8th Street St. Louis, MO 63101<br /> 
 				<br />
 				314 621 5443<br />
 				<script type="text/javascript">
@@ -49,10 +49,8 @@
 			<ul>
 				<li><a href="">Twitter</a></li>
 				<li><a href="">Facebook</a></li>
-				<li><a href="">Pinterest</a></li>
 				<li><a href="">Google +</a></li>
 				<li><a href="">Instagram</a></li>
-				<li><a href="">Youtube</a></li>
 			</ul>
 		</div>
 		<div class="col2 last">

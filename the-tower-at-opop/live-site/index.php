@@ -34,7 +34,7 @@
 		<section id="perks" class="scrollsections">
 			<article>
 				<h2>Take the high life<br /> on the go.</h2>
-				<p>Our residents are V.I.P. Take advantage of room service,<br /> valet parking and more with your Partner Perk card.</p>
+				<p>Our residents are V.I.P. Take advantage of room service,<br /> valet parking and more with your OPOP V.I.P Card.</p>
 				<a href="<?php echo MAINURL."vip-perks"; ?>" class="button">Learn More</a>
 			</article>
 		</section>
@@ -47,6 +47,13 @@
 		
 		<script>
 		$(document).ready(function() {
+			//Scroll Indicator Click
+			$('#home img').click(function(){
+				$( "#scrollsections-menuitem-1" ).trigger( "click" );
+				
+			})
+			
+			
 			//initiate scroll indication animation
 			setInterval(function(){
 				indicateScroll();

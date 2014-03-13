@@ -266,7 +266,7 @@ body {
 
 section#home { background-image: url('../img/bg-tower-blue.jpg'); }
 section#home #scroll-indicator { 
-	position: absolute; bottom: 25px; left: 50%; margin-left: -21.5px; opacity: 1;
+	position: absolute; bottom: 25px; left: 50%; margin-left: -21.5px; opacity: 1; cursor: pointer;
 	-webkit-transition: all .3s ease-out;
 	-moz-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -575,7 +575,7 @@ section.general h2 { width: 100%; text-align: center; color: #1c2d36; border-top
 /*****About*****/
 /**************/
 
-section.about { margin-top: 129px; padding: 0 0 50px 0; }
+section.about { margin-top: 128px; padding: 0 0 50px 0; }
 .about .header-image { margin: 0 0 100px 0; height: 547px; background: url('../img/about-header.jpg') no-repeat bottom center; background-size: cover; }
 .about { color: #666; }
 .general a { color: #26799d; text-decoration: underline; }
@@ -613,6 +613,15 @@ article.flr1-2 .col4 { width: 32.085561%; /*365/1122*/ float: left; margin-right
 article.flr1-2 .col4 h3 { color: #3b90b3; font-size: 30px; font-family: 'gotham-light'; text-align: left; line-height: 1.3; font-weight: normal; }
 article.flr1-2 .col4.last { margin-right: 0; }
 article.flr1-2 .col4 img { max-width: 100%; }
+
+/*******************/
+/*****Location*****/
+/*****************/
+
+section.location { margin-top: 128px; padding: 0; }
+#map_canvas #content h1 { font-family: 'gotham-medium'; font-size: 14px; color: #235a71; margin-top: 0; }
+#map_canvas #content p { margin-bottom: 0; }
+#map_canvas #content p.phone { margin: 0; }
 
 
 /*****************************/
@@ -814,14 +823,17 @@ section.gallery .flexslider:hover .flex-next { right: -8%; }
 	.area-amenities .col3 { width: 100%; margin: 0; float: none; }
 	.area-amenities .col3 ul { margin: 0 0 35px 0; }
 	
-<<<<<<< HEAD
+
 	/*About*/
 	
 	article.flr3-23 #swiffycontainer { margin-top: -100px; z-index: 0; position: relative; }
 	article.flr3-23 { margin: 0 0 0 0; }
-=======
+
 	section.contact { padding-right: 5%; padding-left: 5%; }
->>>>>>> FETCH_HEAD
+	
+	/*Location*/
+	
+	section.location { margin-top: 122px; }
 }
 
 @media print,
