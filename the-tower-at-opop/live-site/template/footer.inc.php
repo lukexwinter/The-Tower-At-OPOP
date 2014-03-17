@@ -56,7 +56,7 @@
 		<div class="col2 last">
 			<h6>Residents</h6>
 			<ul>
-				<li><a href="">napLife</a></li>
+				<li>Resident Login</li>
 				<li><a href="#">Sign Out</a></li>
 			</ul>
 		</div>

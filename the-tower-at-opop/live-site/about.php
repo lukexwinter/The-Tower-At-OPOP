@@ -31,7 +31,7 @@
 						</div>
 						<h3>2 Amazing Penthouse Lofts</h3>
 						<p>
-							Simply put, there is nothing else like this in downtown St. Louis.  These penthouse level two bedroom lofts offer sweeping views from 24-foot floor-to-ceiling windows as far as the eye can see.
+							Simply put, there is nothing else like this in downtown St. Louis.  These penthouse level two bedroom lofts offer sweeping views from 24 foot floor-to-ceiling windows as far as the eye can see.
 							<br /><br />
 							<a href="<?php echo MAINURL."penthouses"; ?>">View Penthouses</a>
 						</p>
@@ -86,7 +86,7 @@
 					<h2>Floors 3-23</h2>
 					<div class="col4">
 						<h3>126 apartments in a variety of shapes and sizes.</h3>
-						<p>The Tower at OPOP sets a new (and much higher) bar for apartment living. The floor plans feature floor-to-ceiling windows and range from studios to 1 bedroom apartments with flex space. Brand new contemporary finishes serve as mere accents to the spectacular views that start on the third floor and only get better the further up you go.</p>
+						<p>The Tower at OPOP sets a new (and much higher) bar for apartment living. The floor plans feature floor-to-ceiling windows and range from studios to one bedroom apartments with flex space. Brand new contemporary finishes serve as mere accents to the spectacular views that start on the third floor and only get better the further up you go.</p>
 						<a href="<?php echo MAINURL."apartments"; ?>">View Apartments</a>
 					</div>
 					<div id="swiffycontainer"></div>
