@@ -47,10 +47,10 @@
 		<div class="col2">
 			<h6>Social</h6>
 			<ul>
-				<li><a href="">Twitter</a></li>
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Google +</a></li>
-				<li><a href="">Instagram</a></li>
+				<li><a href="http://www.facebook.com/toweropop" target="_blank">Facebook</a></li>
+				<li><a href="http://www.twitter.com/toweropop" target="_blank">Twitter</a></li>
+				<li><a href="http://gplus.to/TowerOPOP" target="_blank">Google +</a></li>
+				<li><a href="http://instagram.com/toweropop" target="_blank">Instagram</a></li>
 			</ul>
 		</div>
 		<div class="col2 last">

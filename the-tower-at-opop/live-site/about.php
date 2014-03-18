@@ -103,7 +103,7 @@
 			
 			<div class="content">
 				<article class="flr1-2 clearfix">
-					<h2>Coming Soon</h2>
+					<h2>Plaza Level</h2>
 					<div class="col4">
 						<img src="<?php echo MAINURL."live-site/img/about-magnolia.jpg"; ?>" alt="" />
 						<h3>Magnolia Hotel St. Louis</h3>
@@ -112,10 +112,10 @@
 						</p>
 					</div>
 					<div class="col4">
-						<img src="<?php echo MAINURL."live-site/img/about-dining.jpg"; ?>" alt="" />
-						<h3>Plaza Level Fine Dining</h3>
+						<img src="<?php echo MAINURL."live-site/img/about-culinaria.jpg"; ?>" alt="" />
+						<h3>Downtown Convenience</h3>
 						<p>
-							The first floor commercial space overlooking Old Post Office Plaza will soon be home to one of downtown’s newest and most exciting eateries. Not only will Tower residents have easy access but can also enjoy a VIP experience. Stay tuned for more information on this new addition to The Tower at OPOP.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis egestas lorem ut egestas. Maecenas tempor velit vitae mauris tristique, id ultricies arcu imperdiet. Curabitur semper dui est, eget dignissim.
 						</p>
 						
 					</div>

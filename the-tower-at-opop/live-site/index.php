@@ -19,7 +19,7 @@
 			<article>
 				<h2>Penthouse level fitness center &amp; club room</h2>
 				<p>Floors 24-25 let you look out, hang out, or work out. The sky is the limit.</p>
-				<a href="<?php echo MAINURL."the-tower"; ?>" class="button">View Amenities</a>
+				<a href="<?php echo MAINURL."amenities"; ?>" class="button">View Amenities</a>
 			</article>
 		</section>
 

@@ -31,30 +31,9 @@
 					/*****Restaurants / Bars****/
 		  		    /**************************/
 					
-					/*Over/Under Sports Bar*/
-			  		var overunderImage = '<?php echo MAINURL.""; ?>live-site/img/marker-1.png';
-			  		var overunderPos = new google.maps.LatLng(38.631376,-90.1931721);
-
-			  		var overunderMarker = new google.maps.Marker({position: overunderPos, map: map, icon: overunderImage, content: 'The Over/Under Sports Bar' });
-			  		var overunderContent = '<div id="content">'+
-			  		      '<div id="siteNotice">'+
-			  		      '</div>'+
-			  		      '<h1 id="firstHeading" class="firstHeading">The Over/Under Sports Bar</h1>'+
-			  		      '<div id="bodyContent">'+
-			  		      '<p>911 Washington Ave | St. Louis, MO | 63101</p>'+
-			  			  '<p class="phone">(314) 621 8881</p>'+
-			  		      '</div>'+
-			  		      '</div>';
-
-			  		  var overunderWindow = new google.maps.InfoWindow({
-			  		      content: overunderContent
-			  		  });
-			  		  google.maps.event.addListener(overunderMarker, 'click', function() {
-			  		      overunderWindow.open(map,overunderMarker);
-			  		  });
 					  
   					/*Over/Under Sports Bar*/
-  			  		var overunderImage = '<?php echo MAINURL.""; ?>live-site/img/marker-1.png';
+  			  		var overunderImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-1.png', null, null, null, new google.maps.Size(68,66));
   			  		var overunderPos = new google.maps.LatLng(38.631376,-90.1931721);
 
   			  		var overunderMarker = new google.maps.Marker({position: overunderPos, map: map, icon: overunderImage, content: 'The Over/Under Sports Bar' });
@@ -76,7 +55,7 @@
   			  		  });
 				  
 			  		/*Takaya New Asian*/
-			  		var takayaImage = '<?php echo MAINURL.""; ?>live-site/img/marker-2.png';
+			  		var takayaImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-2.png', null, null, null, new google.maps.Size(68,66));
 			  		var takayaPos = new google.maps.LatLng(38.63018,-90.1900075);
 
 			  		var takayaMarker = new google.maps.Marker({position: takayaPos, map: map, icon: takayaImage, content: 'Takaya New Asian' });
@@ -98,7 +77,7 @@
 			  		  });
 					  
   			  		/*Snarf's Sub Shop*/
-  			  		var snarfsImage = '<?php echo MAINURL.""; ?>live-site/img/marker-3.png';
+  			  		var snarfsImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-3.png', null, null, null, new google.maps.Size(68,66));
   			  		var snarfsPos = new google.maps.LatLng(38.6302999,-90.1899065);
 
   			  		var snarfsMarker = new google.maps.Marker({position: snarfsPos, map: map, icon: snarfsImage, content: 'Snarf\'s Sub Shop' });
@@ -121,7 +100,7 @@
 					  
 					  
 			  		/*Pi Pizzaria*/
-			  		var piImage = '<?php echo MAINURL.""; ?>live-site/img/marker-4.png';
+			  		var piImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-4.png', null, null, null, new google.maps.Size(68,66));
 			  		var piPos = new google.maps.LatLng(38.6302100,-90.1899100);
 
 			  		var piMarker = new google.maps.Marker({position: piPos, map: map, icon: piImage, content: 'Pi Pizzaria' });
@@ -143,7 +122,7 @@
 			  		  });
 					  
   			  		/*Robust Wine Bar*/
-  			  		var robustImage = '<?php echo MAINURL.""; ?>live-site/img/marker-5.png';
+  			  		var robustImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-5.png', null, null, null, new google.maps.Size(68,66));
   			  		var robustPos = new google.maps.LatLng(38.630299,-90.1897178);
 
   			  		var robustMarker = new google.maps.Marker({position: robustPos, map: map, icon: robustImage, content: 'Robust Wine Bar' });
@@ -165,7 +144,7 @@
   			  		  });
 					  
 			  		/*Bridge Tap House & Wine Bar*/
-			  		var bridgetapImage = '<?php echo MAINURL.""; ?>live-site/img/marker-6.png';
+			  		var bridgetapImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-6.png', null, null, null, new google.maps.Size(68,66));
 			  		var bridgetapPos = new google.maps.LatLng(38.630299,-90.1897178);
 
 			  		var bridgetapMarker = new google.maps.Marker({position: bridgetapPos, map: map, icon: bridgetapImage, content: 'Bridge Tap House & Wine Bar' });
@@ -187,7 +166,7 @@
 			  		  });
 					  
   			  		/*Baileys' Range*/
-  			  		var baileysImage = '<?php echo MAINURL.""; ?>live-site/img/marker-7.png';
+  			  		var baileysImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-7.png', null, null, null, new google.maps.Size(68,66));
   			  		var baileysPos = new google.maps.LatLng(38.6290628,-90.1945029);
 
   			  		var baileysMarker = new google.maps.Marker({position: baileysPos, map: map, icon: baileysImage, content: 'Baileys\' Range' });
@@ -209,7 +188,7 @@
   			  		  });
 					  
 			  		/*Wasabi*/
-			  		var wasabiImage = '<?php echo MAINURL.""; ?>live-site/img/marker-8.png';
+			  		var wasabiImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-8.png', null, null, null, new google.maps.Size(68,66));
 			  		var wasabiPos = new google.maps.LatLng(38.6318827,-90.1980575);
 
 			  		var wasabiMarker = new google.maps.Marker({position: wasabiPos, map: map, icon: wasabiImage, content: 'Wasabi' });
@@ -231,7 +210,7 @@
 			  		  });
 					  
   			  		/*Mizu*/
-  			  		var mizuImage = '<?php echo MAINURL.""; ?>live-site/img/marker-9.png';
+  			  		var mizuImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-9.png', null, null, null, new google.maps.Size(68,66));
   			  		var mizuPos = new google.maps.LatLng(38.6313539,-90.1945082);
 
   			  		var mizuMarker = new google.maps.Marker({position: mizuPos, map: map, icon: mizuImage, content: 'Mizu' });
@@ -253,7 +232,7 @@
   			  		  });
 					  
 			  		/*Mango*/
-			  		var mangoImage = '<?php echo MAINURL.""; ?>live-site/img/marker-10.png';
+			  		var mangoImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-10.png', null, null, null, new google.maps.Size(68,66));
 			  		var mangoPos = new google.maps.LatLng(38.6319681,-90.1949427);
 
 			  		var mangoMarker = new google.maps.Marker({position: mangoPos, map: map, icon: mangoImage, content: 'Mango' });
@@ -275,7 +254,7 @@
 			  		  });
 					  
   			  		/*The Dubliner*/
-  			  		var dublinerImage = '<?php echo MAINURL.""; ?>live-site/img/marker-11.png';
+  			  		var dublinerImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-11.png', null, null, null, new google.maps.Size(68,66));
   			  		var dublinerPos = new google.maps.LatLng(38.6313977,-90.1947389);
 
   			  		var dublinerMarker = new google.maps.Marker({position: dublinerPos, map: map, icon: dublinerImage, content: 'The Dubliner' });
@@ -297,7 +276,7 @@
   			  		  });
 					  
 			  		/*Rosalita's Cantina*/
-			  		var rosalitasImage = '<?php echo MAINURL.""; ?>live-site/img/marker-12.png';
+			  		var rosalitasImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-12.png', null, null, null, new google.maps.Size(68,66));
 			  		var rosalitasPos = new google.maps.LatLng(38.6321007,-90.1975827);
 
 			  		var rosalitasMarker = new google.maps.Marker({position: rosalitasPos, map: map, icon: rosalitasImage, content: 'Rosalita\'s Cantina' });
@@ -319,7 +298,7 @@
 			  		  });
 					  
   			  		/*Lucas Park Grille*/
-  			  		var lucasparkImage = '<?php echo MAINURL.""; ?>live-site/img/marker-13.png';
+  			  		var lucasparkImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-13.png', null, null, null, new google.maps.Size(68,66));
   			  		var lucasparkPos = new google.maps.LatLng(38.6319959,-90.1980872);
 
   			  		var lucasparkMarker = new google.maps.Marker({position: lucasparkPos, map: map, icon: lucasparkImage, content: 'Lucas Park Grille' });
@@ -341,7 +320,7 @@
   			  		  });
 					  
 			  		/*Charles P. Stanley Cigar Company & Lounge*/
-			  		var charlespcigarImage = '<?php echo MAINURL.""; ?>live-site/img/marker-14.png';
+			  		var charlespcigarImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-14.png', null, null, null, new google.maps.Size(68,66));
 			  		var charlespcigarPos = new google.maps.LatLng(38.6310921,-90.1943116);
 
 			  		var charlespcigarMarker = new google.maps.Marker({position: charlespcigarPos, map: map, icon: charlespcigarImage, content: 'Charles P. Stanley Cigar Company & Lounge' });
@@ -363,7 +342,7 @@
 			  		  });
 			  
   			  		/*St. Louis Convention Center*/
-  			  		var conventioncenterImage = '<?php echo MAINURL.""; ?>live-site/img/marker-15.png';
+  			  		var conventioncenterImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-15.png', null, null, null, new google.maps.Size(68,66));
   			  		var conventioncenterPos = new google.maps.LatLng(38.6326366,-90.1915546);
 
   			  		var conventioncenterMarker = new google.maps.Marker({position: conventioncenterPos, map: map, icon: conventioncenterImage, content: 'St. Louis Convention Center' });
@@ -385,7 +364,7 @@
   			  		  });
 					  
 			  		/*The National Blues Museum*/
-			  		var nationalbluesImage = '<?php echo MAINURL.""; ?>live-site/img/marker-16.png';
+			  		var nationalbluesImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-16.png', null, null, null, new google.maps.Size(68,66));
 			  		var nationalbluesPos = new google.maps.LatLng(38.6302559,-90.1894834);
 
 			  		var nationalbluesMarker = new google.maps.Marker({position: nationalbluesPos, map: map, icon: nationalbluesImage, content: 'The National Blues Museum' });
@@ -407,7 +386,7 @@
 			  		  });
 					  
   			  		/*The MX Theatre*/
-  			  		var mxtheatreImage = '<?php echo MAINURL.""; ?>live-site/img/marker-17.png';
+  			  		var mxtheatreImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-17.png', null, null, null, new google.maps.Size(68,66));
   			  		var mxtheatrePos = new google.maps.LatLng(38.6301433,-90.1897881);
 
   			  		var mxtheatreMarker = new google.maps.Marker({position: mxtheatrePos, map: map, icon: mxtheatreImage, content: 'The MX Theatre' });
@@ -429,7 +408,7 @@
   			  		  });
 					  
 			  		/*Edward Jones dome*/
-			  		var edwardjonesImage = '<?php echo MAINURL.""; ?>live-site/img/marker-18.png';
+			  		var edwardjonesImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-18.png', null, null, null, new google.maps.Size(68,66));
 			  		var edwardjonesPos = new google.maps.LatLng(38.6328042,-90.1884177);
 
 			  		var edwardjonesMarker = new google.maps.Marker({position: edwardjonesPos, map: map, icon: edwardjonesImage, content: 'Edward Jones dome' });
@@ -451,7 +430,7 @@
 			  		  });
 					  
   			  		/*Laclede's Landing*/
-  			  		var lacledesImage = '<?php echo MAINURL.""; ?>live-site/img/marker-19.png';
+  			  		var lacledesImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-19.png', null, null, null, new google.maps.Size(68,66));
   			  		var lacledesPos = new google.maps.LatLng(38.6307178,-90.1857293);
 
   			  		var lacledesMarker = new google.maps.Marker({position: lacledesPos, map: map, icon: lacledesImage, content: 'Laclede\'s Landing' });
@@ -473,7 +452,7 @@
   			  		  });
 					  
 			  		/*Gateway Arch*/
-			  		var archImage = '<?php echo MAINURL.""; ?>live-site/img/marker-20.png';
+			  		var archImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-20.png', null, null, null, new google.maps.Size(68,66));
 			  		var archPos = new google.maps.LatLng(38.6248217,-90.1848606);
 
 			  		var archMarker = new google.maps.Marker({position: archPos, map: map, icon: archImage, content: 'Gateway Arch' });
@@ -495,7 +474,7 @@
 			  		  });
 					  
   			  		/*Lumière Place Casino*/
-  			  		var lumiereImage = '<?php echo MAINURL.""; ?>live-site/img/marker-21.png';
+  			  		var lumiereImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-21.png', null, null, null, new google.maps.Size(68,66));
   			  		var lumierePos = new google.maps.LatLng(38.6322057,-90.1844726);
 
   			  		var lumiereMarker = new google.maps.Marker({position: lumierePos, map: map, icon: lumiereImage, content: 'Lumière Place Casino' });
@@ -517,7 +496,7 @@
   			  		  });
 					  
 			  		/*Orpheum Theatre*/
-			  		var orpheumImage = '<?php echo MAINURL.""; ?>live-site/img/marker-22.png';
+			  		var orpheumImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-22.png', null, null, null, new google.maps.Size(68,66));
 			  		var orpheumPos = new google.maps.LatLng(38.6300701,-90.1929825);
 
 			  		var orpheumMarker = new google.maps.Marker({position: orpheumPos, map: map, icon: orpheumImage, content: 'Orpheum Theatre' });
@@ -539,7 +518,7 @@
 			  		  });
 					  
   			  		/*Scottrade Center*/
-  			  		var scottradeImage = '<?php echo MAINURL.""; ?>live-site/img/marker-23.png';
+  			  		var scottradeImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-23.png', null, null, null, new google.maps.Size(68,66));
   			  		var scottradePos = new google.maps.LatLng(38.6262362,-90.2021987);
 
   			  		var scottradeMarker = new google.maps.Marker({position: scottradePos, map: map, icon: scottradeImage, content: 'Scottrade Center' });
@@ -561,7 +540,7 @@
   			  		  });
 					  
 			  		/*Busch Stadium*/
-			  		var buschImage = '<?php echo MAINURL.""; ?>live-site/img/marker-24.png';
+			  		var buschImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-24.png', null, null, null, new google.maps.Size(68,66));
 			  		var buschPos = new google.maps.LatLng(38.6223296,-90.1924645);
 
 			  		var buschMarker = new google.maps.Marker({position: buschPos, map: map, icon: buschImage, content: 'Busch Stadium' });
@@ -583,7 +562,7 @@
 			  		  });
 					  
   			  		/*City Museum*/
-  			  		var citymuseumImage = '<?php echo MAINURL.""; ?>live-site/img/marker-24.png';
+  			  		var citymuseumImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-24.png', null, null, null, new google.maps.Size(68,66));
   			  		var citymuseumPos = new google.maps.LatLng(38.6336859,-90.2007213);
 
   			  		var citymuseumMarker = new google.maps.Marker({position: citymuseumPos, map: map, icon: citymuseumImage, content: 'City Museum' });
@@ -605,7 +584,7 @@
   			  		  });
 					  
     			  		/*Flamingo Bowl*/
-    			  		var flamingoImage = '<?php echo MAINURL.""; ?>live-site/img/marker-25.png';
+    			  		var flamingoImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-25.png', null, null, null, new google.maps.Size(68,66));
     			  		var flamingoPos = new google.maps.LatLng(38.6316023,-90.1955769);
 
     			  		var flamingoMarker = new google.maps.Marker({position: flamingoPos, map: map, icon: flamingoImage, content: 'Flamingo Bowl' });
@@ -627,7 +606,7 @@
     			  		  });
 						  
       			  		/*Starbucks*/
-      			  		var starbucksImage = '<?php echo MAINURL.""; ?>live-site/img/marker-26.png';
+      			  		var starbucksImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-26.png', null, null, null, new google.maps.Size(68,66));
       			  		var starbucksPos = new google.maps.LatLng(38.630727, -90.191778);
 
       			  		var starbucksMarker = new google.maps.Marker({position: starbucksPos, map: map, icon: starbucksImage, content: 'Starbucks' });
@@ -649,7 +628,7 @@
       			  		  });
 						  
     			  		/*U.S. Bank*/
-    			  		var usbankImage = '<?php echo MAINURL.""; ?>live-site/img/marker-27.png';
+    			  		var usbankImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-27.png', null, null, null, new google.maps.Size(68,66));
     			  		var usbankPos = new google.maps.LatLng(38.629403, -90.191772);
 
     			  		var usbankMarker = new google.maps.Marker({position: usbankPos, map: map, icon: usbankImage, content: 'U.S. Bank' });
@@ -671,7 +650,7 @@
     			  		  });
 						  
       			  		/*Culinaria*/
-      			  		var culinariaImage = '<?php echo MAINURL.""; ?>live-site/img/marker-28.png';
+      			  		var culinariaImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-28.png', null, null, null, new google.maps.Size(68,66));
       			  		var culinariaPos = new google.maps.LatLng(38.6292894,-90.1929856);
 
       			  		var culinariaMarker = new google.maps.Marker({position: culinariaPos, map: map, icon: culinariaImage, content: 'Culinaria - A Schnucks Market' });
@@ -693,7 +672,7 @@
       			  		  });
 						  
     			  		/*Fifth Third Bank*/
-    			  		var fifththirdImage = '<?php echo MAINURL.""; ?>live-site/img/marker-29.png';
+    			  		var fifththirdImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-29.png', null, null, null, new google.maps.Size(68,66));
     			  		var fifththirdPos = new google.maps.LatLng(38.6291271,-90.1944381);
 
     			  		var fifththirdMarker = new google.maps.Marker({position: fifththirdPos, map: map, icon: fifththirdImage, content: 'Fifth Third Bank' });
@@ -715,7 +694,7 @@
     			  		  });
 					  
       			  		/*Post Office*/
-      			  		var postofficeImage = '<?php echo MAINURL.""; ?>live-site/img/marker-30.png';
+      			  		var postofficeImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-30.png', null, null, null, new google.maps.Size(68,66));
       			  		var postofficePos = new google.maps.LatLng(38.629531, -90.197311);
 
       			  		var postofficeMarker = new google.maps.Marker({position: postofficePos, map: map, icon: postofficeImage, content: 'Post Office' });
@@ -737,7 +716,7 @@
       			  		  });
 					  
     			  		/*Band Box Cleaners*/
-    			  		var bandboxImage = '<?php echo MAINURL.""; ?>live-site/img/marker-31.png';
+    			  		var bandboxImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-31.png', null, null, null, new google.maps.Size(68,66));
     			  		var bandboxPos = new google.maps.LatLng(38.6302008,-90.1959644);
 
     			  		var bandboxMarker = new google.maps.Marker({position: bandboxPos, map: map, icon: bandboxImage, content: 'Band Box Cleaners' });
@@ -759,7 +738,7 @@
     			  		  });
 						  
       			  		/*8th and Pine Metrolink Station*/
-      			  		var pinemetroImage = '<?php echo MAINURL.""; ?>live-site/img/marker-32.png';
+      			  		var pinemetroImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-32.png', null, null, null, new google.maps.Size(68,66));
       			  		var pinemetroPos = new google.maps.LatLng(38.6302008,-90.1959644);
 
       			  		var pinemetroMarker = new google.maps.Marker({position: pinemetroPos, map: map, icon: pinemetroImage, content: '8th and Pine Metrolink Station' });
@@ -780,7 +759,7 @@
       			  		  });
 						  
     			  		/*Convention Center Metrolink Station*/
-    			  		var conventionmetroImage = '<?php echo MAINURL.""; ?>live-site/img/marker-33.png';
+    			  		var conventionmetroImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-33.png', null, null, null, new google.maps.Size(68,66));
     			  		var conventionmetroPos = new google.maps.LatLng(38.630345, -90.189376);
 
     			  		var conventionmetroMarker = new google.maps.Marker({position: conventionmetroPos, map: map, icon: conventionmetroImage, content: 'Convention Center Metrolink Station' });
@@ -800,7 +779,7 @@
     			  		  });
 						  
       			  		/*Ceci Unique Gallery*/
-      			  		var ceciImage = '<?php echo MAINURL.""; ?>live-site/img/marker-34.png';
+      			  		var ceciImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-34.png', null, null, null, new google.maps.Size(68,66));
       			  		var ceciPos = new google.maps.LatLng(38.631172,-90.1928801);
 
       			  		var ceciMarker = new google.maps.Marker({position: ceciPos, map: map, icon: ceciImage, content: 'CeCi Unique Gallery' });
@@ -822,7 +801,7 @@
       			  		  });
 						  
     			  		/*Collective at MX*/
-    			  		var collectivemxImage = '<?php echo MAINURL.""; ?>live-site/img/marker-35.png';
+    			  		var collectivemxImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-35.png', null, null, null, new google.maps.Size(68,66));
     			  		var collectivemxPos = new google.maps.LatLng(38.6302764,-90.1897993);
 
     			  		var collectivemxMarker = new google.maps.Marker({position: collectivemxPos, map: map, icon: collectivemxImage, content: 'Collective at MX' });
@@ -844,7 +823,7 @@
     			  		  });
 						  
       			  		/*MacroSun International*/
-      			  		var macrosunImage = '<?php echo MAINURL.""; ?>live-site/img/marker-36.png';
+      			  		var macrosunImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-36.png', null, null, null, new google.maps.Size(68,66));
       			  		var macrosunPos = new google.maps.LatLng(38.632134,-90.1987393);
 
       			  		var macrosunMarker = new google.maps.Marker({position: macrosunPos, map: map, icon: macrosunImage, content: 'MacroSun International' });
@@ -866,7 +845,7 @@
       			  		  });
 						  
     			  		/*Old Post Office*/
-    			  		var oldpostofficeImage = '<?php echo MAINURL.""; ?>live-site/img/marker-37.png';
+    			  		var oldpostofficeImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-37.png', null, null, null, new google.maps.Size(68,66));
     			  		var oldpostofficePos = new google.maps.LatLng(38.6289109,-90.192876);
 
     			  		var oldpostofficeMarker = new google.maps.Marker({position: oldpostofficePos, map: map, icon: oldpostofficeImage, content: 'Old Post Office' });
@@ -887,7 +866,7 @@
     			  		  });
 						  
       			  		/*Old Courthouse*/
-      			  		var oldcourthouseImage = '<?php echo MAINURL.""; ?>live-site/img/marker-38.png';
+      			  		var oldcourthouseImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-38.png', null, null, null, new google.maps.Size(68,66));
       			  		var oldcourthousePos = new google.maps.LatLng(38.6255912,-90.188968);
 
       			  		var oldcourthouseMarker = new google.maps.Marker({position: oldcourthousePos, map: map, icon: oldcourthouseImage, content: 'Old Courthouse' });
@@ -909,10 +888,10 @@
 			  
 			  
 				  		/*Tower at OPOP*/
-				  		var towerImage = '<?php echo MAINURL.""; ?>live-site/img/marker-tower.png';
+				  		var towerImage = new google.maps.MarkerImage ('<?php echo MAINURL.""; ?>live-site/img/marker-tower.png', null, null, null, new google.maps.Size(209,75));
 				  		var towerPos = new google.maps.LatLng(38.629867, -90.192209);
 	
-				  		var towerMarker = new google.maps.Marker({position: towerPos, map: map, icon: towerImage, content: 'The Tower at OPOP', animation: google.maps.Animation.DROP, zIndex: 500 });
+				  		var towerMarker = new google.maps.Marker({position: towerPos, map: map, icon: towerImage, content: 'The Tower at OPOP', animation: google.maps.Animation.DROP, zIndex: 500});
 				  		var towerContent = '<div id="content">'+
 				  		      '<div id="siteNotice">'+
 				  		      '</div>'+

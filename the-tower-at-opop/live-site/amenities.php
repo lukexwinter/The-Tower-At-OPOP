@@ -9,7 +9,7 @@
 			</nav>
 				
 			<div class="tower-amenities clearfix">
-				
+				<h1>Tower Amenities</h1>
 				<div class="col4">
 					<ul class="amenities-list">
 						<li class="title">Breathtaking Views</li>

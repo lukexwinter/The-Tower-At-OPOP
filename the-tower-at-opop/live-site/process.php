@@ -4,8 +4,8 @@ class Process {
 
 	var $connection;
 	//var $contactAddress = "trmchenry@gmail.com"; //TESTING
-	var $contactAddress = "luke@bluestonecreative.com";
-	var $FromAddress = "noreply@bluestonecreative.com";
+	var $contactAddress = "info@thetoweratopop.com";
+	var $FromAddress = "noreply@thetoweratopop.com";
 
 
 	function Process() {

@@ -7,16 +7,17 @@
 					<a href="<?php echo MAINURL."vip-perks"; ?>">V.I.P. Perks</a>
 				</div>
 			</nav>
-				
-			<div class="vip-perks clearfix">
-				<h1>V.I.P. Perks</h1>
-				<p>Becoming a Tower resident is more than waking up to beautiful city views, having access to great amenities and being part of a convenient downtown location. Being a resident of the tower also comes with V.I.P perks. Take a look at the added benefits of life at The Tower:</p>
-				<p>&mdash;</p>
-				<div>
-					<ul class="amenities-list">
-						<li>Exclusive OPOP neighborhood perks and discounts with your OPOP V.I.P. Card</li>
-						<li>Exclusive concierge services from Magnolia Hotel including hotel room discounts, maid services, dry cleaning, lounge bar, and room service</li>
-					</ul>
+			<div class="content">	
+				<div class="vip-perks clearfix">
+					<h1>V.I.P. Perks</h1>
+					<p>Becoming a Tower resident is more than waking up to beautiful city views, having access to great amenities and being part of a convenient downtown location. Being a resident of the tower also comes with V.I.P perks. Take a look at the added benefits of life at The Tower:</p>
+					<p>&mdash;</p>
+					<div>
+						<ul class="amenities-list">
+							<li>Exclusive OPOP neighborhood perks and discounts with your OPOP V.I.P. Card</li>
+							<li>Exclusive concierge services from Magnolia Hotel including hotel room discounts, maid services, dry cleaning, lounge bar, and room service</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			
@@ -36,7 +37,7 @@
 	
 				
 				amenitiesCanvas.css('height', amenitiesHeight);
-				//$('.vip-perks').flexVerticalCenter("padding-top");
+				$('.content').flexVerticalCenter("padding-top");
 			}
 
 			$(window).load(function(){
