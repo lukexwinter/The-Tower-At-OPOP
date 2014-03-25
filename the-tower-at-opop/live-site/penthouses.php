@@ -15,13 +15,13 @@
 			<nav class="fp-nav">
 				<div class="content clearfix">
 					<a id="fp-2401" href="#2401">
-						<span class="unit">2401</span>
+						<span class="unit">2401<span class="floors">Floors<br /><span class="numbers">24 &amp; 25</span></span></span></span>
 						<span class="indicator"></span>
 						<p class="type">Penthouse</p>
 						<span class="sep-right"></span>
 					</a
 					><a id="fp-2402" href="#2402">
-						<span class="unit">2402</span>
+						<span class="unit">2402<span class="floors">Floors<br /><span class="numbers">24 &amp; 25</span></span></span></span>
 						<span class="indicator"></span>
 						<p class="type">Penthouse</p>
 						<span class="sep-left"></span>

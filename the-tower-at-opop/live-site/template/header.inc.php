@@ -11,98 +11,58 @@
 		<?php
 		$page = $_SERVER['REQUEST_URI'];
 		if ($page == "/missouri/st-louis/the-tower-at-opop/apartments") {
-			$title = "Luxury apartments in downtown St. Louis, Missouri - The Tower at OPOP";
-			$description = "The Tower at OPOP offers luxury one bedroom, one bedroom plus, and studio apartments in St Louis, MO";
+			$title = "St Louis Apartments - The Tower at OPOP";
+			$description = "Gorgeous studio, one bedroom and one bedrooom PLUS! apartments in the heart of STL.  Schedule a tour today!";
 			$keywords = "";
 			$breadcrumb = "<span class=\"divider\"> / </span>Apartments";
-		} else if (($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=classico") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=paradiso") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=rossi") || ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans?view=morelli")) {
-			$title = "Floor Plans and Pricing - Amalfi Stonebriar Apartments - North American Properties";
-			$description = "Check out all of Amalfi Stonebriar Apartments's Floor Plans and Pricing Information!";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/penthouses") {
+			$title = "Penthouses in St Louis, MO - The Tower at OPOP";
+			$description = "Check out all of The Tower at OPOP's unbelievable penthouse apartments.  Schedule a tour today!";
 			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span>Floor Plans";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/amenities") {
-			$title = "Amenities - Amalfi Stonebriar Apartments - North American Properties";
-			$description = "Amalfi Stonebriar Apartments offers the best amenities in Frisco, Texas area.";
+			$breadcrumb = "<span class=\"divider\"> / </span>Penthouses";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/the-tower") {
+			$title = "The Tower at OPOP in St Louis, MO";
+			$description = "Learn about The Tower at OPOP's luxury apartments, penthouse lofts, amenities, location, and V.I.P. Perks";
 			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span>Amenities";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/photo-gallery") {
-			$title = "Photo Gallery - Amalfi Stonebriar Apartments - North American Properties";
-			$description = "Browse through and look at Amalfi Stonebriar Apartments's Photo Gallery";
+			$breadcrumb = "<span class=\"divider\"> / </span>The Tower";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/photo-gallery") {
+			$title = "Photo Gallery - The Tower at OPOP in St Louis, MO";
+			$description = "Browse through and look at The Tower at OPOP's Photo Gallery";
 			$keywords = "";
 			$breadcrumb = "<span class=\"divider\"> / </span>Photo Gallery";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/contact") {
-			$title = "Contact Us - Amalfi Stonebriar Apartments - North American Properties";
-			$description = "Contact Amalfi Stonebriar Apartments Today! ";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/location") {
+			$title = "Location of The Tower at OPOP in St Louis, MO";
+			$description = "The Tower at OPOP offers prime location in downtown Saint Louis.  Come check us out today!";
+			$keywords = "";
+			$breadcrumb = "<span class=\"divider\"> / </span>Location";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/amenities") {
+			$title = "Amenities - The Tower at OPOP in St Louis MO";
+			$description = "The best amenities in St Louis are at The Tower at OPOP. Schedule a Tour Today!";
+			$keywords = "";
+			$breadcrumb = "<span class=\"divider\"> / </span>Amenities";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/vip-perks") {
+			$title = "V.I.P. Perks - The Tower at OPOP in St Louis MO";
+			$description = "Be a VIP at The Tower of OPOP";
+			$keywords = "";
+			$breadcrumb = "<span class=\"divider\"> / </span>V.I.P. Perks";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/contact") {
+			$title = "Contact Us - The Tower at OPOP in St Louis, MO - North American Properties";
+			$description = "Contact The Tower at OPOP Today!";
 			$keywords = "";
 			$breadcrumb = "<span class=\"divider\"> / </span>Contact";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/schedule-tour") {
-			$title = "Schedule Tour - Amalfi Stonebriar Apartments - North American Properties";
-			$description = "Schedule a Tour at Amalfi Stonebriar Apartments Today!";
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/schedule-tour") {
+			$title = "Schedule Tour - The Tower at OPOP in St Louis, MO - North American Properties";
+			$description = "Schedule a Tour at The Tower at OPOP Today!";
 			$keywords = "";
 			$breadcrumb = "<span class=\"divider\"> / </span>Schedule a Tour";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/video-gallery") {
-			$title = "Video Gallery - Amalfi Stonebriar Apartments - North American Properties";
-			$description = "Browse through and look at Amalfi Stonebriar Apartments's Video Gallery";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span>Video Gallery";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/apply") {
+		} else if ($page == "/missouri/st-louis/the-tower-at-opop/apply") {
 			$title = "Apply Now";
-			$description = "Apply Now to live at exquisite Amalfi Stonebriar Apartments";
+			$description = "Apply Now to live at The Tower at OPOP";
 			$keywords = "";
 			$breadcrumb = "<span class=\"divider\"> / </span>Apply Now";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/classico-one") {
-			$title = "Classico One - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Classico One floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Classico One";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/classico-two") {
-			$title = "Classico Two - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Classico Two floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Classico Two";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/classico-three") {
-			$title = "Classico Four - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Classico Three floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Classico Three";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/Classico Four") {
-			$title = "Classico Four - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Classico Four plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Classico Four";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/paradiso-one") {
-			$title = "Paradiso One - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Paradiso One floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Paradiso One";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/rossi-one") {
-			$title = "Rossi One - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Rossi One floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Rossi One";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/rossi-two") {
-			$title = "Rossi Two - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Rossi Two floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Rossi Two";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/rossi-three") {
-			$title = "Rossi Three - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Rossi Three floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Rossi Three";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/morelli-one") {
-			$title = "Morelli One - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Morelli One floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Morelli One";
-		} else if ($page == "/texas/frisco/amalfi-stonebriar-apartments/floor-plans/morelli-two") {
-			$title = "Morelli Two - Floor Plans | Amalfi Stonebriar Apartments";
-			$description = "Make the Morelli Two floor plan your new home at Amalfi Stonebriar Apartments";
-			$keywords = "";
-			$breadcrumb = "<span class=\"divider\"> / </span><a href=\"".MAINURL."floor-plans\" title=\"Floor Plans\">Floor Plans</a><span class=\"divider\"> / </span>Morelli Two";
 		} else {
-			$title = "Luxury Apartments in Frisco, TX – Amalfi Stonebriar";
-			$description = "Amalfi Stonebriar Apartments offers exquisite one and two bedroom apartments in Frisco, TX";
+			$title = "Luxury St Louis Apartments and Lofts - The Tower at OPOP";
+			$description = "Downtown St Louis' premier luxury apartment community offers fantastic studio, apartments and penthouse lofts.";
 			$keywords = "";
 			$breadcrumb = "";
 		}

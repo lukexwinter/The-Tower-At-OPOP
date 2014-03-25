@@ -3,6 +3,7 @@
 			<article>
 				<h2>Experience St. Louis From a Whole New Perspective</h2>
 				<p>Breathtaking views high above Old Post Office Plaza</p>
+				<a href="<?php echo MAINURL."the-tower"; ?>" class="button">Explore the Tower</a>
 			</article>
 			<img id="scroll-indicator" width="43" height="23" src="<?php echo MAINURL."live-site/img/down-arrow.png"; ?>" alt="" />
 		</section>

@@ -115,7 +115,7 @@
 						<img src="<?php echo MAINURL."live-site/img/about-culinaria.jpg"; ?>" alt="" />
 						<h3>Downtown Convenience</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis egestas lorem ut egestas. Maecenas tempor velit vitae mauris tristique, id ultricies arcu imperdiet. Curabitur semper dui est, eget dignissim.
+							If you know downtown, then you know Culinaria. It's the city's hippest market where you can get everything from fresh fruits and vegetables to an enormous selection of wine. It's also just across the Plaza.
 						</p>
 						
 					</div>

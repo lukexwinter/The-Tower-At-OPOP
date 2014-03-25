@@ -282,7 +282,6 @@ section#home #scroll-indicator.indicate {
 }
 
 section#apartments { background-image: url('../img/bg-06-color.jpg'); background-position: bottom center; }
-
 section#amenities { background-image: url('../img/bg-tower-amenities.jpg'); background-position: top right; }
 section#location { background-image: url('../img/bg-location.jpg'); background-position: bottom center; }
 section#perks { background-image: url('../img/bg-vip-card.jpg'); background-position: top right; }
@@ -348,6 +347,8 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 }
 
 .fp-nav a .unit { position: absolute; right: -35%; top: 8px; color: #26799d; font-size: 24px; font-family: 'gotham-light'; width: 100%; text-align: center; display: block; }
+.fp-nav a .unit .floors { display: block; text-align: right; width: 58%; font-size: 8px; text-transform: uppercase; font-family: 'gotham-medium'; letter-spacing: 0px; line-height: 1.2; margin-top: -3px; opacity: 1; }
+.fp-nav a .unit .floors .numbers { font-size: 9px; }
 
 .fp-nav a .indicator { width: 47px; height: 114px; background-size: cover; display: inline-block; background-position: center; opacity: 1; }
 .fp-nav a#fp-01 .indicator { background-image: url('../img/01-indicator.png'); }
@@ -382,6 +383,7 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .fp-nav.condensed .content { overflow: hidden; height: 60px; }
 .fp-nav.condensed a .indicator { opacity: 0; height: 21px; }
 .fp-nav.condensed a .unit {  right: 0; }
+.fp-nav.condensed a .unit .floors { display: none; }
 .fp-nav.condensed a p.price { opacity: 0; }
 .fp-nav.condensed a .sep-left, .fp-nav.condensed a .sep-right { height: 60px; }
 .penthouses .fp-nav.condensed a .indicator { opacity: 0; height: 21px; }
@@ -397,7 +399,7 @@ section#perks { background-image: url('../img/bg-vip-card.jpg'); background-posi
 .fp-nav .toggle-nav a.active { color: #26799d; background: #fff !important; }
 
 .fp-content { margin: 281px 0 0 0; background: url('../img/bg-06-blue.jpg') no-repeat top center; background-size: cover; padding: 150px 0; height: 900px; position: relative; }
-.penthouses .fp-content { margin-top: 246px; height: 700px; }
+.penthouses .fp-content { margin-top: 246px; height: 700px; background-image: url('../img/bg-2401-blue.jpg'); }
 .fp-item { max-width: 1140px; margin: 0 auto; }
 .fp-item .fp-image { 
 	width: 48.245614%; /*550/1140*/ text-align: center; margin-right: 0%; float: left; 
@@ -557,6 +559,9 @@ footer .bottom a { color: #e1e2d4; text-decoration: none; }
 footer .bottom p { margin: 0; font-family: 'gotham-light'; }
 footer .bottom p#breadcrumbs { font-size: 11px; text-transform: uppercase; margin: 0 0 5px 0; }
 footer .bottom p#terms { font-size: 9px; }
+footer #overview { background-color: #ebebdd; padding: 25px; text-align: center; }
+footer #overview h1 { font-size: 14px; margin-top: 0; font-family: 'gotham-light'; font-weight: normal; }
+footer #overview p { margin-bottom: 0; font-family: 'muli'; }
 
 /****************/
 /***General*****/
@@ -768,6 +773,7 @@ section.gallery .flexslider:hover .flex-next { right: -8%; }
 	.fp-nav a .indicator, .penthouses .fp-nav a .indicator { opacity: 0; height: 21px; }
 	.penthouses .fp-nav a p { margin: -5px 0 0 0; }
 	.fp-nav a .unit {  right: 0; }
+	.fp-nav a .unit .floors { display: none; }
 	.fp-nav a p.price { opacity: 0; }
 	.fp-nav a .sep-left, .fp-nav.condensed a .sep-right { height: 60px; }
 	
@@ -853,6 +859,7 @@ section.gallery .flexslider:hover .flex-next { right: -8%; }
 	.availability small { display: block; }
 	
 	/*About*/
+	section.about { margin-top: 122px; }
 	article.flr24-25 .col7 .indicator { width: 175px; height: 175px; }
 	article.flr3-23 #swiffycontainer { width: 100%; float: none; margin-top: 0; }
 	article.flr3-23 { padding: 0 5%; }
@@ -875,6 +882,10 @@ section.gallery .flexslider:hover .flex-next { right: -8%; }
 	/*Amenities*/
 	section.amenities, section.perks { margin-top: 121px; }
 	section.perks .vip-perks { width: 90%; }
+	
+	/*Location*/
+	
+	section.location { margin-top: 122px !important; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -895,16 +906,12 @@ section.gallery .flexslider:hover .flex-next { right: -8%; }
 	
 
 	/*About*/
-	section.about { margin-top: 122px; }
+	
 	
 	article.flr3-23 #swiffycontainer { margin-top: -100px; z-index: 0; position: relative; }
 	article.flr3-23 { margin: 0 0 0 0; }
 
 	section.contact { padding-right: 5%; padding-left: 5%; }
-	
-	/*Location*/
-	
-	section.location { margin-top: 122px; }
 }
 
 @media print,

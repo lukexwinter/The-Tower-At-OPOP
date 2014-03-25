@@ -15,14 +15,14 @@
 			<nav class="fp-nav">
 				<div class="content clearfix">
 					<a id="fp-01" href="#01">
-						<span class="unit">01</span>
+						<span class="unit">01<span class="floors">Floors<br /><span class="numbers">3-23</span></span></span>
 						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,295</p>
 						<span class="sep-right"></span>
 					</a>
 					<a id="fp-02" href="#02">
-						<span class="unit">02</span>
+						<span class="unit">02<span class="floors">Floors<br /><span class="numbers">3-23</span></span></span>
 						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,295</p>
@@ -30,7 +30,7 @@
 						<span class="sep-right"></span>
 					</a>
 					<a id="fp-03" href="#03">
-						<span class="unit">03</span>
+						<span class="unit">03<span class="floors">Floors<br /><span class="numbers">3-23</span></span></span>
 						<span class="indicator"></span>
 						<p class="type">Studio</p>
 						<p class="price">Starting at $1,195</p>
@@ -38,7 +38,7 @@
 						<span class="sep-right"></span>
 					</a>
 					<a id="fp-04" href="#04">
-						<span class="unit">04</span>
+						<span class="unit">04<span class="floors">Floors<br /><span class="numbers">3-23</span></span></span>
 						<span class="indicator"></span>
 						<p class="type">One Bedroom <em>Plus!</em></p>
 						<p class="price">Starting at $1,595</p>
@@ -46,7 +46,7 @@
 						<span class="sep-right"></span>
 					</a>
 					<a id="fp-05" href="#05">
-						<span class="unit">05</span>
+						<span class="unit">05<span class="floors">Floors<br /><span class="numbers">3-23</span></span></span>
 						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,295</p>
@@ -54,7 +54,7 @@
 						<span class="sep-right"></span>
 					</a>
 					<a id="fp-06" href="#06">
-						<span class="unit">06</span>
+						<span class="unit">06<span class="floors">Floors<br /><span class="numbers">3-23</span></span></span>
 						<span class="indicator"></span>
 						<p class="type">One Bedroom</p>
 						<p class="price">Starting at $1,495</p>
@@ -95,6 +95,9 @@
 					    <li>
 					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-4.jpg"; ?>" />
 					    </li>
+					    <li>
+					      <img src="<?php echo MAINURL."live-site/img/fp-amenities-5.jpg"; ?>" />
+					    </li>
 					  </ul>
 					</div>
 				</div>
@@ -127,8 +130,9 @@
 							<li>Benjamin Moore interior paint</li>
 							<li>Blazing fast internet and TV options provided by AT&amp;T U-Verse fiber optics</li>
 						</ul>
+						<small style="color: lightgray; font-family: 'muli'; font-size: 11px;">*<em>In select units</em></small>
 					</div>
-					<small style="color: lightgray; font-family: 'muli'; font-size: 11px;">*<em>In select units</em></small>
+					
 				</div>
 					
 			</div>	

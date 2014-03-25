@@ -6,23 +6,38 @@
 		<h1>Photo Gallery</h1>
 		<div class="flexslider">
 		  <ul class="slides">
+  		    <li>
+  		      <img src="<?php echo MAINURL."live-site/img/pg-4.jpg"; ?>" />
+  		    </li>
+			<li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-5.jpg"; ?>" />
+		    </li>
+		    <li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-14.jpg"; ?>" />
+		    </li>
+			<li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-17.jpg"; ?>" />
+		    </li>
 		    <li>
 		      <img src="<?php echo MAINURL."live-site/img/pg-1.jpg"; ?>" />
 		    </li>
 		    <li>
 		      <img src="<?php echo MAINURL."live-site/img/pg-2.jpg"; ?>" />
 		    </li>
-		    <li>
-		      <img src="<?php echo MAINURL."live-site/img/pg-3.jpg"; ?>" />
-		    </li>
-		    <li>
-		      <img src="<?php echo MAINURL."live-site/img/pg-4.jpg"; ?>" />
-		    </li>
-			<li>
-		      <img src="<?php echo MAINURL."live-site/img/pg-5.jpg"; ?>" />
-		    </li>
 			<li>
 		      <img src="<?php echo MAINURL."live-site/img/pg-6.jpg"; ?>" />
+		    </li>
+		    <li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-9.jpg"; ?>" />
+		    </li>
+		    <li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-10.jpg"; ?>" />
+		    </li>
+		    <li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-15.jpg"; ?>" />
+		    </li>
+			<li>
+		      <img src="<?php echo MAINURL."live-site/img/pg-19.jpg"; ?>" />
 		    </li>
 		  </ul>
 		</div>
